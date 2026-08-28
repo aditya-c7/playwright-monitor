@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility &amp; Performance Report — 28/8/2026</title>
+<style>
+  :root {
+    --bg: #f6f8fa; --card: #fff; --ink: #1f2328; --muted: #656d76;
+    --green: #1a7f37; --red: #cf222e; --border: #d0d7de;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
+  header { background: #0d1117; color: #fff; padding: 2rem 1.5rem; }
+  header h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+  header p { margin: 0; color: #8b949e; }
+  main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+           gap: 1rem; margin: 1.5rem 0; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+          padding: 1rem 1.25rem; }
+  .card-label { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .card-value { font-size: 1.9rem; font-weight: 700; margin: .2rem 0; }
+  .card-sub { font-size: .8rem; color: var(--muted); }
+
+  section { background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+            padding: 1.5rem; margin: 1.5rem 0; }
+  h2 { margin-top: 0; } h3 { border-bottom: 1px solid var(--border); padding-bottom: .35rem; }
+  hr { border: none; border-top: 1px dashed var(--border); margin: 2rem 0; }
+
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { text-align: left; padding: .6rem .75rem; border-bottom: 1px solid var(--border);
+           vertical-align: top; }
+  th { background: #f6f8fa; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+
+  .badge { display: inline-block; padding: .15rem .6rem; border-radius: 999px;
+           font-size: .78rem; font-weight: 700; white-space: nowrap; }
+  .badge.pass { background: #dafbe1; color: var(--green); }
+  .badge.fail { background: #ffebe9; color: var(--red); }
+
+  .chip { display: inline-block; padding: .12rem .55rem; border-radius: 6px;
+          font-size: .75rem; font-weight: 700; text-transform: capitalize; }
+  .chip.critical { background: #82071e; color: #fff; }
+  .chip.serious  { background: #cf222e; color: #fff; }
+  .chip.moderate { background: #bf8700; color: #fff; }
+  .chip.minor    { background: #d0d7de; color: #1f2328; }
+
+  .rule { background: #eff1f3; border-radius: 4px; padding: .05rem .35rem; font-size: .8rem; }
+  .nodes { margin: 0; padding-left: 1rem; }
+  .nodes li { margin-bottom: .5rem; }
+  pre { background: #f6f8fa; border: 1px solid var(--border); border-radius: 6px;
+        padding: .5rem; font-size: .75rem; overflow-x: auto; white-space: pre-wrap; }
+  .muted { color: var(--muted); }
+  .ok { color: var(--green); font-weight: 600; }
+  .error { color: var(--red); font-weight: 600; }
+
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+  figure { margin: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  figcaption { background: #f6f8fa; padding: .45rem .75rem; font-size: .78rem;
+               font-weight: 700; letter-spacing: .05em; }
+  img { width: 100%; height: 260px; object-fit: cover; object-position: top; display: block; }
+
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 2rem 0 3rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🔍 Web Accessibility &amp; Performance Report</h1>
+  <p>Generated 28/8/2026, 2:57:28 pm · axe-core + Playwright · Core Web Vitals</p>
+</header>
+<main>
+  <div class="cards">
+      <div class="card">
+        <div class="card-label">Pages Scanned</div>
+        <div class="card-value">3</div>
+        <div class="card-sub">0 failed</div>
+      </div>
+      <div class="card">
+        <div class="card-label">A11y Violations</div>
+        <div class="card-value">6</div>
+        <div class="card-sub">1 serious/critical</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Avg LCP</div>
+        <div class="card-value">1343 ms</div>
+        <div class="card-sub">good</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Avg CLS</div>
+        <div class="card-value">0.017</div>
+        <div class="card-sub">good</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Avg FID</div>
+        <div class="card-value">—</div>
+        <div class="card-sub">good</div>
+      </div></div>
+  
+    <section id="page-0">
+      <h2>📄 Aditya Home</h2>
+      <p>
+        <a href="https://adityahq.me" target="_blank" rel="noopener">https://adityahq.me</a>
+        · scanned 28/8/2026, 2:56:47 pm
+      </p>
+
+      <h3>⚡ Core Web Vitals</h3>
+      <table><thead><tr><th>Metric</th><th>Value</th><th>Target</th><th>Status</th></tr></thead><tbody>
+      <tr>
+        <td><strong>LCP — Largest Contentful Paint</strong><br><small class="muted">Rendering speed of the biggest visible element</small></td>
+        <td>1700 ms</td>
+        <td>≤ 2500 ms</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>CLS — Cumulative Layout Shift</strong><br><small class="muted">Visual stability (0 is perfect)</small></td>
+        <td>0</td>
+        <td>≤ 0.1</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>FID — First Input Delay</strong><br><small class="muted">Responsiveness to first interaction</small></td>
+        <td>—</td>
+        <td>≤ 100 ms</td>
+        <td><span class="muted">not measured</span></td>
+      </tr>
+      <tr>
+        <td><strong>TTFB — Time to First Byte</strong><br><small class="muted">Server response speed</small></td>
+        <td>433.2000000178814 ms</td>
+        <td>≤ 800 ms</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>Load Time</strong><br><small class="muted">Full page load (informational)</small></td>
+        <td>1919.2000000178814 ms</td>
+        <td>informational</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr></tbody></table>
+
+      <h3>♿ Accessibility Violations</h3>
+      <p class="ok">🎉 No accessibility violations detected. 36 checks passed.</p>
+
+      <h3>📸 Screenshots</h3>
+      
+    <div class="gallery">
+      
+        <figure>
+          <figcaption>MOBILE · 375px</figcaption>
+          <a href="../screenshots/adityahq-me_mobile.png" target="_blank" rel="noopener">
+            <img src="../screenshots/adityahq-me_mobile.png" alt="Aditya Home — mobile viewport" loading="lazy">
+          </a>
+        </figure>
+        <figure>
+          <figcaption>TABLET · 768px</figcaption>
+          <a href="../screenshots/adityahq-me_tablet.png" target="_blank" rel="noopener">
+            <img src="../screenshots/adityahq-me_tablet.png" alt="Aditya Home — tablet viewport" loading="lazy">
+          </a>
+        </figure>
+        <figure>
+          <figcaption>DESKTOP · 1440px</figcaption>
+          <a href="../screenshots/adityahq-me_desktop.png" target="_blank" rel="noopener">
+            <img src="../screenshots/adityahq-me_desktop.png" alt="Aditya Home — desktop viewport" loading="lazy">
+          </a>
+        </figure>
+    </div>
+    </section><hr>
+    <section id="page-1">
+      <h2>📄 GitHub</h2>
+      <p>
+        <a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>
+        · scanned 28/8/2026, 2:56:58 pm
+      </p>
+
+      <h3>⚡ Core Web Vitals</h3>
+      <table><thead><tr><th>Metric</th><th>Value</th><th>Target</th><th>Status</th></tr></thead><tbody>
+      <tr>
+        <td><strong>LCP — Largest Contentful Paint</strong><br><small class="muted">Rendering speed of the biggest visible element</small></td>
+        <td>724 ms</td>
+        <td>≤ 2500 ms</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>CLS — Cumulative Layout Shift</strong><br><small class="muted">Visual stability (0 is perfect)</small></td>
+        <td>0.051</td>
+        <td>≤ 0.1</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>FID — First Input Delay</strong><br><small class="muted">Responsiveness to first interaction</small></td>
+        <td>—</td>
+        <td>≤ 100 ms</td>
+        <td><span class="muted">not measured</span></td>
+      </tr>
+      <tr>
+        <td><strong>TTFB — Time to First Byte</strong><br><small class="muted">Server response speed</small></td>
+        <td>117.7000000178814 ms</td>
+        <td>≤ 800 ms</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>Load Time</strong><br><small class="muted">Full page load (informational)</small></td>
+        <td>1050.800000011921 ms</td>
+        <td>informational</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr></tbody></table>
+
+      <h3>♿ Accessibility Violations</h3>
+      <table class="a11y"><thead><tr><th>Rule</th><th>Impact</th><th>Nodes</th><th>Affected Elements</th></tr></thead><tbody>
+      <tr>
+        <td>
+          <strong>Landmarks should have a unique role or role/label/title (i.e. accessible name) combination</strong><br>
+          <code class="rule">landmark-unique</code><br>
+          <small class="muted">Ensure landmarks are unique</small><br>
+          <a href="https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright" target="_blank" rel="noopener">How to fix ↗</a>
+        </td>
+        <td><span class="chip moderate">moderate</span></td>
+        <td>1</td>
+        <td>
+          <ul class="nodes">
+            
+              <li>
+                <code>.lp-IntroHero &gt; .CtaForm &gt; form</code>
+                <pre>&lt;form accept-charset=&quot;UTF-8&quot; aria-label=&quot;Sign up for GitHub&quot; action=&quot;/signup&quot; method=&quot;get&quot;&gt;</pre>
+              </li>
+            
+          </ul>
+        </td>
+      </tr></tbody></table>
+
+      <h3>📸 Screenshots</h3>
+      
+    <div class="gallery">
+      
+        <figure>
+          <figcaption>MOBILE · 375px</figcaption>
+          <a href="../screenshots/github-com_mobile.png" target="_blank" rel="noopener">
+            <img src="../screenshots/github-com_mobile.png" alt="GitHub — mobile viewport" loading="lazy">
+          </a>
+        </figure>
+        <figure>
+          <figcaption>TABLET · 768px</figcaption>
+          <a href="../screenshots/github-com_tablet.png" target="_blank" rel="noopener">
+            <img src="../screenshots/github-com_tablet.png" alt="GitHub — tablet viewport" loading="lazy">
+          </a>
+        </figure>
+        <figure>
+          <figcaption>DESKTOP · 1440px</figcaption>
+          <a href="../screenshots/github-com_desktop.png" target="_blank" rel="noopener">
+            <img src="../screenshots/github-com_desktop.png" alt="GitHub — desktop viewport" loading="lazy">
+          </a>
+        </figure>
+    </div>
+    </section><hr>
+    <section id="page-2">
+      <h2>📄 Google</h2>
+      <p>
+        <a href="https://google.com" target="_blank" rel="noopener">https://google.com</a>
+        · scanned 28/8/2026, 2:57:16 pm
+      </p>
+
+      <h3>⚡ Core Web Vitals</h3>
+      <table><thead><tr><th>Metric</th><th>Value</th><th>Target</th><th>Status</th></tr></thead><tbody>
+      <tr>
+        <td><strong>LCP — Largest Contentful Paint</strong><br><small class="muted">Rendering speed of the biggest visible element</small></td>
+        <td>1604 ms</td>
+        <td>≤ 2500 ms</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>CLS — Cumulative Layout Shift</strong><br><small class="muted">Visual stability (0 is perfect)</small></td>
+        <td>0</td>
+        <td>≤ 0.1</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr>
+      <tr>
+        <td><strong>FID — First Input Delay</strong><br><small class="muted">Responsiveness to first interaction</small></td>
+        <td>—</td>
+        <td>≤ 100 ms</td>
+        <td><span class="muted">not measured</span></td>
+      </tr>
+      <tr>
+        <td><strong>TTFB — Time to First Byte</strong><br><small class="muted">Server response speed</small></td>
+        <td>1156.4000000059605 ms</td>
+        <td>≤ 800 ms</td>
+        <td><span class="badge fail">✗ FAIL</span></td>
+      </tr>
+      <tr>
+        <td><strong>Load Time</strong><br><small class="muted">Full page load (informational)</small></td>
+        <td>2012 ms</td>
+        <td>informational</td>
+        <td><span class="badge pass">✓ PASS</span></td>
+      </tr></tbody></table>
+
+      <h3>♿ Accessibility Violations</h3>
+      <table class="a11y"><thead><tr><th>Rule</th><th>Impact</th><th>Nodes</th><th>Affected Elements</th></tr></thead><tbody>
+      <tr>
+        <td>
+          <strong>ARIA role should be appropriate for the element</strong><br>
+          <code class="rule">aria-allowed-role</code><br>
+          <small class="muted">Ensure role attribute has an appropriate value for the element</small><br>
+          <a href="https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright" target="_blank" rel="noopener">How to fix ↗</a>
+        </td>
+        <td><span class="chip minor">minor</span></td>
+        <td>1</td>
+        <td>
+          <ul class="nodes">
+            
+              <li>
+                <code>#ti6dpd</code>
+                <pre>&lt;textarea jsname=&quot;yZiJbe&quot; class=&quot;gLFyf&quot; aria-controls=&quot;Alh6id&quot; aria-owns=&quot;Alh6id&quot; autofocus=&quot;&quot; title=&quot;Search&quot; aria-label=&quot;Search&quot; placeholder=&quot;&quot; aria-autocomplete=&quot;both&quot; aria-expanded=&quot;false&quot; aria-has</pre>
+              </li>
+            
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Document should have one main landmark</strong><br>
+          <code class="rule">landmark-one-main</code><br>
+          <small class="muted">Ensure the document has a main landmark</small><br>
+          <a href="https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright" target="_blank" rel="noopener">How to fix ↗</a>
+        </td>
+        <td><span class="chip moderate">moderate</span></td>
+        <td>1</td>
+        <td>
+          <ul class="nodes">
+            
+              <li>
+                <code>html</code>
+                <pre>&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/WebPage&quot; lang=&quot;en-IN&quot;&gt;</pre>
+              </li>
+            
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Links must be distinguishable without relying on color</strong><br>
+          <code class="rule">link-in-text-block</code><br>
+          <small class="muted">Ensure links are distinguished from surrounding text in a way that does not rely on color</small><br>
+          <a href="https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright" target="_blank" rel="noopener">How to fix ↗</a>
+        </td>
+        <td><span class="chip serious">serious</span></td>
+        <td>9</td>
+        <td>
+          <ul class="nodes">
+            
+              <li>
+                <code>#SIvCob &gt; a:nth-child(1)</code>
+                <pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;amp;hl=hi&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBY&quot;&gt;हिन्दी&lt;/a&gt;</pre>
+              </li>
+              <li>
+                <code>#SIvCob &gt; a:nth-child(2)</code>
+                <pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;amp;hl=bn&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBc&quot;&gt;বাংলা&lt;/a&gt;</pre>
+              </li>
+              <li>
+                <code>#SIvCob &gt; a:nth-child(3)</code>
+                <pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;amp;hl=te&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBg&quot;&gt;తెలుగు&lt;/a&gt;</pre>
+              </li>
+              <li>
+                <code>a:nth-child(4)</code>
+                <pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;amp;hl=mr&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBk&quot;&gt;मराठी&lt;/a&gt;</pre>
+              </li>
+              <li>
+                <code>a:nth-child(5)</code>
+                <pre>&lt;a href=&quot;https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;amp;hl=ta&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBo&quot;&gt;தமிழ்&lt;/a&gt;</pre>
+              </li>
+            <li class="muted">…and 4 more</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Page should contain a level-one heading</strong><br>
+          <code class="rule">page-has-heading-one</code><br>
+          <small class="muted">Ensure that the page, or at least one of its frames contains a level-one heading</small><br>
+          <a href="https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright" target="_blank" rel="noopener">How to fix ↗</a>
+        </td>
+        <td><span class="chip moderate">moderate</span></td>
+        <td>1</td>
+        <td>
+          <ul class="nodes">
+            
+              <li>
+                <code>html</code>
+                <pre>&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/WebPage&quot; lang=&quot;en-IN&quot;&gt;</pre>
+              </li>
+            
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>All page content should be contained by landmarks</strong><br>
+          <code class="rule">region</code><br>
+          <small class="muted">Ensure all page content is contained by landmarks</small><br>
+          <a href="https://dequeuniversity.com/rules/axe/4.13/region?application=playwright" target="_blank" rel="noopener">How to fix ↗</a>
+        </td>
+        <td><span class="chip moderate">moderate</span></td>
+        <td>1</td>
+        <td>
+          <ul class="nodes">
+            
+              <li>
+                <code>#SIvCob</code>
+                <pre>&lt;div id=&quot;SIvCob&quot;&gt;</pre>
+              </li>
+            
+          </ul>
+        </td>
+      </tr></tbody></table>
+
+      <h3>📸 Screenshots</h3>
+      
+    <div class="gallery">
+      
+        <figure>
+          <figcaption>MOBILE · 375px</figcaption>
+          <a href="../screenshots/google-com_mobile.png" target="_blank" rel="noopener">
+            <img src="../screenshots/google-com_mobile.png" alt="Google — mobile viewport" loading="lazy">
+          </a>
+        </figure>
+        <figure>
+          <figcaption>TABLET · 768px</figcaption>
+          <a href="../screenshots/google-com_tablet.png" target="_blank" rel="noopener">
+            <img src="../screenshots/google-com_tablet.png" alt="Google — tablet viewport" loading="lazy">
+          </a>
+        </figure>
+        <figure>
+          <figcaption>DESKTOP · 1440px</figcaption>
+          <a href="../screenshots/google-com_desktop.png" target="_blank" rel="noopener">
+            <img src="../screenshots/google-com_desktop.png" alt="Google — desktop viewport" loading="lazy">
+          </a>
+        </figure>
+    </div>
+    </section>
+</main>
+<footer>
+  Report by portfolio-monitor — thresholds: LCP ≤ 2500ms · CLS ≤ 0.1 · FID ≤ 100ms
+</footer>
+</body>
+</html>

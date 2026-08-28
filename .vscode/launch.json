@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Monitor (audit + report)",
+      "program": "${workspaceFolder}/src/monitor.js",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": { "STRICT": "false" },
+      "postDebugTask": "Generate report"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Monitor (strict mode)",
+      "program": "${workspaceFolder}/src/monitor.js",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": { "STRICT": "true" }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Generate report only",
+      "program": "${workspaceFolder}/src/report-generator.js",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

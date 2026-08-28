@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Playwright browser binaries & test artifacts
+.playwright/
+test-results/
+playwright-report/
+blob-report/
+
+# Keep the results folders tracked, but ignore heavy/ephemeral content.
+# We intentionally COMMIT results/reports/ and results/screenshots/ so GitHub
+# Actions can push the latest report back to the repo (GitHub Pages-ready).
+results/*.log
+
+# Environment / secrets
+.env
+.env.local
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json

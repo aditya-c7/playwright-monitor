@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-monitor",
+  "version": "1.0.0",
+  "description": "Daily web accessibility (axe-core) and performance (Core Web Vitals) monitor with Playwright, 3-viewport screenshots and an HTML report",
+  "main": "src/monitor.js",
+  "scripts": {
+    "monitor": "node src/monitor.js && node src/report-generator.js",
+    "monitor:strict": "node -e \"process.env.STRICT='true'; require('child_process').execSync('node src/monitor.js',{stdio:'inherit',env:{...process.env,STRICT:'true'}})\"",
+    "report": "node src/report-generator.js",
+    "test": "playwright test",
+    "show-report": "playwright show-report"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "axe-core",
+    "core-web-vitals",
+    "performance",
+    "playwright",
+    "monitoring"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1",
+    "playwright": "^1.62.1"
+  }
+}
+

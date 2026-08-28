@@ -1,0 +1,229 @@
+{
+  "runAt": "2026-08-28T09:27:28.418Z",
+  "strictMode": false,
+  "thresholds": {
+    "lcp": 2500,
+    "cls": 0.1,
+    "fid": 100,
+    "ttfb": 800
+  },
+  "summary": {
+    "totalPages": 3,
+    "failedPages": 0,
+    "totalViolations": 6,
+    "criticalOrSerious": 1,
+    "avgLcp": 1343,
+    "avgCls": 0.017,
+    "avgFid": 0
+  },
+  "pages": [
+    {
+      "name": "Aditya Home",
+      "url": "https://adityahq.me",
+      "scannedAt": "2026-08-28T09:26:47.717Z",
+      "screenshots": {
+        "mobile": "screenshots/adityahq-me_mobile.png",
+        "tablet": "screenshots/adityahq-me_tablet.png",
+        "desktop": "screenshots/adityahq-me_desktop.png"
+      },
+      "vitals": {
+        "lcp": 1700,
+        "cls": 0,
+        "fid": null,
+        "ttfb": 433.2000000178814,
+        "loadTime": 1919.2000000178814,
+        "domContentLoaded": 1674
+      },
+      "violations": [],
+      "passes": 36,
+      "error": null
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com",
+      "scannedAt": "2026-08-28T09:26:58.220Z",
+      "screenshots": {
+        "mobile": "screenshots/github-com_mobile.png",
+        "tablet": "screenshots/github-com_tablet.png",
+        "desktop": "screenshots/github-com_desktop.png"
+      },
+      "vitals": {
+        "lcp": 724,
+        "cls": 0.050625,
+        "fid": null,
+        "ttfb": 117.7000000178814,
+        "loadTime": 1050.800000011921,
+        "domContentLoaded": 1024.5
+      },
+      "violations": [
+        {
+          "id": "landmark-unique",
+          "impact": "moderate",
+          "title": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+          "description": "Ensure landmarks are unique",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": ".lp-IntroHero > .CtaForm > form",
+              "html": "<form accept-charset=\"UTF-8\" aria-label=\"Sign up for GitHub\" action=\"/signup\" method=\"get\">",
+              "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+            }
+          ]
+        }
+      ],
+      "passes": 49,
+      "error": null
+    },
+    {
+      "name": "Google",
+      "url": "https://google.com",
+      "scannedAt": "2026-08-28T09:27:16.976Z",
+      "screenshots": {
+        "mobile": "screenshots/google-com_mobile.png",
+        "tablet": "screenshots/google-com_tablet.png",
+        "desktop": "screenshots/google-com_desktop.png"
+      },
+      "vitals": {
+        "lcp": 1604,
+        "cls": 0,
+        "fid": null,
+        "ttfb": 1156.4000000059605,
+        "loadTime": 2012,
+        "domContentLoaded": 1815.5
+      },
+      "violations": [
+        {
+          "id": "aria-allowed-role",
+          "impact": "minor",
+          "title": "ARIA role should be appropriate for the element",
+          "description": "Ensure role attribute has an appropriate value for the element",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-allowed-role?application=playwright",
+          "tags": [
+            "cat.aria",
+            "best-practice"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "#ti6dpd",
+              "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-has",
+              "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "title": "Document should have one main landmark",
+          "description": "Ensure the document has a main landmark",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-one-main?application=playwright",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "html",
+              "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en-IN\">",
+              "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "title": "Links must be distinguishable without relying on color",
+          "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
+          "tags": [
+            "cat.color",
+            "wcag2a",
+            "wcag141",
+            "TTv5",
+            "TT13.a",
+            "EN-301-549",
+            "EN-9.1.4.1",
+            "RGAAv4",
+            "RGAA-10.6.1"
+          ],
+          "nodeCount": 9,
+          "nodes": [
+            {
+              "target": "#SIvCob > a:nth-child(1)",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBY\">हिन्दी</a>",
+              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "target": "#SIvCob > a:nth-child(2)",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBc\">বাংলা</a>",
+              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "target": "#SIvCob > a:nth-child(3)",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBg\">తెలుగు</a>",
+              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "target": "a:nth-child(4)",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBk\">मराठी</a>",
+              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "target": "a:nth-child(5)",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBo\">தமிழ்</a>",
+              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "title": "Page should contain a level-one heading",
+          "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/page-has-heading-one?application=playwright",
+          "tags": [
+            "cat.semantics",
+            "best-practice"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "html",
+              "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en-IN\">",
+              "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "title": "All page content should be contained by landmarks",
+          "description": "Ensure all page content is contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+          "tags": [
+            "cat.keyboard",
+            "best-practice",
+            "RGAAv4",
+            "RGAA-9.2.1"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "#SIvCob",
+              "html": "<div id=\"SIvCob\">",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
+        }
+      ],
+      "passes": 32,
+      "error": null
+    }
+  ]
+}
