@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-08-28T09:27:28.418Z",
+  "runAt": "2026-08-28T10:00:00.319Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,27 +12,27 @@
     "failedPages": 0,
     "totalViolations": 6,
     "criticalOrSerious": 1,
-    "avgLcp": 1343,
-    "avgCls": 0.017,
+    "avgLcp": 1273,
+    "avgCls": 0.018,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-08-28T09:26:47.717Z",
+      "scannedAt": "2026-08-28T09:59:18.995Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1700,
+        "lcp": 1680,
         "cls": 0,
         "fid": null,
-        "ttfb": 433.2000000178814,
-        "loadTime": 1919.2000000178814,
-        "domContentLoaded": 1674
+        "ttfb": 355.60000002384186,
+        "loadTime": 1904.6000000238419,
+        "domContentLoaded": 1686.2000000178814
       },
       "violations": [],
       "passes": 36,
@@ -41,19 +41,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-08-28T09:26:58.220Z",
+      "scannedAt": "2026-08-28T09:59:29.959Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 724,
-        "cls": 0.050625,
+        "lcp": 788,
+        "cls": 0.05408793131510417,
         "fid": null,
-        "ttfb": 117.7000000178814,
-        "loadTime": 1050.800000011921,
-        "domContentLoaded": 1024.5
+        "ttfb": 145.69999998807907,
+        "loadTime": 1302.199999988079,
+        "domContentLoaded": 1292.8999999761581
       },
       "violations": [
         {
@@ -82,19 +82,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-08-28T09:27:16.976Z",
+      "scannedAt": "2026-08-28T09:59:49.399Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1604,
+        "lcp": 1352,
         "cls": 0,
         "fid": null,
-        "ttfb": 1156.4000000059605,
-        "loadTime": 2012,
-        "domContentLoaded": 1815.5
+        "ttfb": 821.7999999821186,
+        "loadTime": 1763.199999988079,
+        "domContentLoaded": 1578.2999999821186
       },
       "violations": [
         {
@@ -156,27 +156,27 @@
           "nodes": [
             {
               "target": "#SIvCob > a:nth-child(1)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBY\">हिन्दी</a>",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBY\">हिन्दी</a>",
               "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             },
             {
               "target": "#SIvCob > a:nth-child(2)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBc\">বাংলা</a>",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBc\">বাংলা</a>",
               "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             },
             {
               "target": "#SIvCob > a:nth-child(3)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBg\">తెలుగు</a>",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBg\">తెలుగు</a>",
               "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             },
             {
               "target": "a:nth-child(4)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBk\">मराठी</a>",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBk\">मराठी</a>",
               "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             },
             {
               "target": "a:nth-child(5)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_hvpscgORM9Wvm7dUMIx_YrkPEKs%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj-vLD4gMOWAxWe4DgGHZ-aFw8Q2ZgBCBo\">தமிழ்</a>",
+              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBo\">தமிழ்</a>",
               "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             }
           ]

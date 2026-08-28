@@ -1,52 +1,52 @@
-# 🔍 Web Accessibility & Performance Monitor
+﻿# ðŸ” Web Accessibility & Performance Monitor
 
 Automated daily audits of your website(s) using **Playwright**, **axe-core**, and the
-**Performance API** — with a beautiful HTML report and GitHub Actions automation.
+**Performance API** â€” with a beautiful HTML report and GitHub Actions automation.
 
 Every run checks each configured page for:
 
 | Check | Tool | Output |
 |---|---|---|
-| ♿ Accessibility (WCAG 2.x A/AA + best practices) | `@axe-core/playwright` | Violations with impact, affected nodes & fix links |
-| ⚡ Core Web Vitals (LCP, CLS, FID, TTFB) | Performance API | Values with PASS/FAIL vs Google thresholds |
-| 📸 Responsive screenshots | Playwright | Full-page captures at 375 / 768 / 1440 px |
+| â™¿ Accessibility (WCAG 2.x A/AA + best practices) | `@axe-core/playwright` | Violations with impact, affected nodes & fix links |
+| âš¡ Core Web Vitals (LCP, CLS, FID, TTFB) | Performance API | Values with PASS/FAIL vs Google thresholds |
+| ðŸ“¸ Responsive screenshots | Playwright | Full-page captures at 375 / 768 / 1440 px |
 
 Results are written to `results/` and rendered into `results/reports/report.html`.
 
 ---
 
-## ✨ Features
+## âœ¨ Features
 
 - **Accessibility audits** with axe-core: rule, impact severity, affected elements, and "how to fix" links
 - **Core Web Vitals** captured via `PerformanceObserver` (buffered entries) + Navigation Timing
 - **3-viewport screenshot gallery** (mobile 375px, tablet 768px, desktop 1440px)
-- **Zero-dependency HTML report** — self-contained, works offline
-- **Strict mode** (`STRICT=true`) — exits non-zero when critical/serious violations exist
+- **Zero-dependency HTML report** â€” self-contained, works offline
+- **Strict mode** (`STRICT=true`) â€” exits non-zero when critical/serious violations exist
 - **Daily GitHub Actions workflow** that commits fresh results back to the repo
-- **Error-resilient** — one unreachable page never aborts the whole run
+- **Error-resilient** â€” one unreachable page never aborts the whole run
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```
 portfolio-monitor/
-├── .github/
-│   └── workflows/
-│       └── monitor.yml          # Daily cron workflow
-├── results/
-│   ├── screenshots/             # 3 screenshots per page (committed)
-│   ├── reports/
-│   │   └── report.html          # Generated HTML report (committed)
-│   └── results.json             # Raw metrics data (committed)
-├── src/
-│   ├── config.js                # 👈 URLs, viewports, thresholds — EDIT ME
-│   ├── monitor.js               # Browser automation + audits
-│   └── report-generator.js      # JSON -> HTML report
-├── playwright.config.js         # VS Code extension + optional tests
-├── package.json
-└── README.md
+â”œâ”€â”€ .github/
+â”‚   â””â”€â”€ workflows/
+â”‚       â””â”€â”€ monitor.yml          # Daily cron workflow
+â”œâ”€â”€ results/
+â”‚   â”œâ”€â”€ screenshots/             # 3 screenshots per page (committed)
+â”‚   â”œâ”€â”€ reports/
+â”‚   â”‚   â””â”€â”€ report.html          # Generated HTML report (committed)
+â”‚   â””â”€â”€ results.json             # Raw metrics data (committed)
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ config.js                # ðŸ‘ˆ URLs, viewports, thresholds â€” EDIT ME
+â”‚   â”œâ”€â”€ monitor.js               # Browser automation + audits
+â”‚   â””â”€â”€ report-generator.js      # JSON -> HTML report
+â”œâ”€â”€ playwright.config.js         # VS Code extension + optional tests
+â”œâ”€â”€ package.json
+â””â”€â”€ README.md
 ```
 
-## 🚀 Setup (step by step)
+## ðŸš€ Setup (step by step)
 
 ### 1. Prerequisites
 - **Node.js 18+** (`node -v` to check)
@@ -75,14 +75,14 @@ Adjust thresholds if you want stricter/looser pass-fail:
 
 ```js
 thresholds: {
-  lcp: 2500,  // ms — Google "good" is < 2.5s
-  cls: 0.1,   //    — < 0.1
-  fid: 100,   // ms — < 100ms
-  ttfb: 800,  // ms — < 800ms
+  lcp: 2500,  // ms â€” Google "good" is < 2.5s
+  cls: 0.1,   //    â€” < 0.1
+  fid: 100,   // ms â€” < 100ms
+  ttfb: 800,  // ms â€” < 800ms
 },
 ```
 
-## 🏃 Run locally
+## ðŸƒ Run locally
 
 ```bash
 # One command to do everything (audit + report):
@@ -96,12 +96,12 @@ npm run monitor
 ```
 
 Then open the report:
-- In VS Code: right-click `results/reports/report.html` → **Open with Live Server**
+- In VS Code: right-click `results/reports/report.html` â†’ **Open with Live Server**
 - Or double-click the file in Explorer
 
-**Watch it run** (headed mode): set `headless: false` in `src/config.js` → `behavior`.
+**Watch it run** (headed mode): set `headless: false` in `src/config.js` â†’ `behavior`.
 
-## 🤖 Daily automation with GitHub Actions
+## ðŸ¤- Daily automation with GitHub Actions
 
 1. Push this repo to GitHub:
    ```bash
@@ -110,16 +110,16 @@ Then open the report:
    git remote add origin https://github.com/YOUR_USERNAME/portfolio-monitor.git
    git push -u origin main
    ```
-2. That's it — `.github/workflows/monitor.yml` runs **daily at 9:00 AM IST**
+2. That's it â€” `.github/workflows/monitor.yml` runs **daily at 9:00 AM IST**
    (`cron: '30 3 * * *'` = 03:30 UTC) and pushes fresh results to the repo.
 3. Optional strict mode: add a repository **variable** `STRICT=true`
-   (Settings → Secrets and variables → Actions → Variables tab) and the workflow
+   (Settings â†’ Secrets and variables â†’ Actions â†’ Variables tab) and the workflow
    will **fail** whenever critical/serious violations appear.
 
-## ⚙️ Debugging in VS Code
+## âš™ï¸ Debugging in VS Code
 
 1. Set `headless: false` in `src/config.js` to watch the browser.
-2. Add a `launch.json` (Run → Add Configuration → Node.js) with:
+2. Add a `launch.json` (Run â†’ Add Configuration â†’ Node.js) with:
    ```json
    {
      "type": "node",
@@ -134,19 +134,19 @@ Then open the report:
 4. The **Playwright Test for VS Code** extension also gives you a Test Explorer,
    Pick Locator, and live browser preview via `playwright.config.js`.
 
-## 📸 Sample Report
+## ðŸ“¸ Sample Report
 
 The generated report contains, per page:
 
-- **Summary cards** — pages scanned, total violations, avg LCP/CLS/FID
-- **Core Web Vitals table** — value vs target with green ✅ PASS / red ❌ FAIL badges
-- **Violations table** — rule ID, impact chip (critical/serious/moderate/minor),
+- **Summary cards** â€” pages scanned, total violations, avg LCP/CLS/FID
+- **Core Web Vitals table** â€” value vs target with green âœ… PASS / red âŒ FAIL badges
+- **Violations table** â€” rule ID, impact chip (critical/serious/moderate/minor),
   number of affected nodes, and code snippets of each element
-- **Screenshot gallery** — MOBILE / TABLET / DESKTOP full-page captures, clickable
+- **Screenshot gallery** â€” MOBILE / TABLET / DESKTOP full-page captures, clickable
 
-*(Run once locally to see `results/reports/report.html` — that's your live sample.)*
+*(Run once locally to see `results/reports/report.html` â€” that's your live sample.)*
 
-## 📜 npm Scripts
+## ðŸ“œ npm Scripts
 
 | Script | What it does |
 |---|---|
@@ -154,15 +154,15 @@ The generated report contains, per page:
 | `npm run report` | Re-render the report from existing `results.json` |
 | `npm run monitor:strict` | Same as monitor, but exits 1 on serious violations |
 
-## ⚠️ Notes & Limitations
+## âš ï¸ Notes & Limitations
 
-- **FID** requires real user interaction — in an automated run there are no clicks,
+- **FID** requires real user interaction â€” in an automated run there are no clicks,
   so it's often `not measured`. (The industry has moved to **INP** for the same reason;
   both need field data. LCP + CLS + TTFB are fully lab-measurable.)
-- Metrics are **lab data** (simulated, consistent network) — for real-user data use
+- Metrics are **lab data** (simulated, consistent network) â€” for real-user data use
   [PageSpeed Insights](https://pagespeed.web.dev) or Chrome UX Report.
 - Screenshots use `fullPage: true`; disable in `monitor.js` if you only want above-the-fold.
 
-## 📄 License
+## ðŸ“„ License
 
 MIT

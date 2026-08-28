@@ -1,27 +1,6 @@
-/**
- * ============================================
- *  HTML Report Generator
- * ============================================
- *
- *  Reads results/results.json (written by monitor.js) and produces a
- *  self-contained HTML report at results/reports/report.html with:
- *    - Summary cards (violations, avg LCP/CLS/FID)
- *    - Core Web Vitals table with PASS/FAIL badges
- *    - Accessibility violations table (rule, impact, affected nodes)
- *    - Screenshot gallery (mobile / tablet / desktop per page)
- *
- *  Run it with:   node src/report-generator.js
- *  View it with:  VS Code Live Server (or open the file directly)
- */
-
 const fs = require('fs');
 const config = require('./config');
 
-/* ------------------------------------------------------------------ */
-/*  Helpers                                                            */
-/* ------------------------------------------------------------------ */
-
-/** Escape page content before injecting it into HTML (prevents XSS/breakage) */
 function esc(str) {
   return String(str ?? '')
     .replace(/&/g, '&amp;')
@@ -30,31 +9,24 @@ function esc(str) {
     .replace(/"/g, '&quot;');
 }
 
-/** Boolean -> green PASS / red FAIL badge */
 function badge(pass) {
   return pass
-    ? '<span class="badge pass">✓ PASS</span>'
-    : '<span class="badge fail">✗ FAIL</span>';
+    ? '<span class="badge pass">PASS</span>'
+    : '<span class="badge fail">FAIL</span>';
 }
 
-/** Impact severity -> coloured chip */
 function impactChip(impact) {
   const cls = { critical: 'critical', serious: 'serious', moderate: 'moderate', minor: 'minor' }[impact] || 'minor';
   return `<span class="chip ${cls}">${esc(impact)}</span>`;
 }
 
-/* ------------------------------------------------------------------ */
-/*  Report fragments                                                   */
-/* ------------------------------------------------------------------ */
-
-/** Summary cards shown at the top of the report */
 function summaryCards(summary) {
   const cards = [
     ['Pages Scanned', summary.totalPages, `${summary.failedPages} failed`],
     ['A11y Violations', summary.totalViolations, `${summary.criticalOrSerious} serious/critical`],
-    ['Avg LCP', summary.avgLcp ? `${summary.avgLcp} ms` : '—', summary.avgLcp <= config.thresholds.lcp ? 'good' : 'needs work'],
+    ['Avg LCP', summary.avgLcp ? `${summary.avgLcp} ms` : '-', summary.avgLcp <= config.thresholds.lcp ? 'good' : 'needs work'],
     ['Avg CLS', summary.avgCls, summary.avgCls <= config.thresholds.cls ? 'good' : 'needs work'],
-    ['Avg FID', summary.avgFid ? `${summary.avgFid} ms` : '—', summary.avgFid <= config.thresholds.fid ? 'good' : 'needs work'],
+    ['Avg FID', summary.avgFid ? `${summary.avgFid} ms` : '-', summary.avgFid <= config.thresholds.fid ? 'good' : 'needs work'],
   ];
   return cards
     .map(
@@ -68,14 +40,13 @@ function summaryCards(summary) {
     .join('');
 }
 
-/** Core Web Vitals table (with PASS/FAIL vs Google thresholds) for one page */
 function vitalsTable(page, thresholds) {
   const v = page.vitals || {};
   const rows = [
-    ['LCP — Largest Contentful Paint', v.lcp, thresholds.lcp, 'ms', 'Rendering speed of the biggest visible element'],
-    ['CLS — Cumulative Layout Shift', v.cls !== undefined && v.cls !== null ? Number(v.cls.toFixed(3)) : null, thresholds.cls, '', 'Visual stability (0 is perfect)'],
-    ['FID — First Input Delay', v.fid, thresholds.fid, 'ms', 'Responsiveness to first interaction'],
-    ['TTFB — Time to First Byte', v.ttfb, thresholds.ttfb, 'ms', 'Server response speed'],
+    ['LCP - Largest Contentful Paint', v.lcp, thresholds.lcp, 'ms', 'Rendering speed of the biggest visible element'],
+    ['CLS - Cumulative Layout Shift', v.cls !== undefined && v.cls !== null ? Number(v.cls.toFixed(3)) : null, thresholds.cls, '', 'Visual stability (0 is perfect)'],
+    ['FID - First Input Delay', v.fid, thresholds.fid, 'ms', 'Responsiveness to first interaction'],
+    ['TTFB - Time to First Byte', v.ttfb, thresholds.ttfb, 'ms', 'Server response speed'],
     ['Load Time', v.loadTime, null, 'ms', 'Full page load (informational)'],
   ];
 
@@ -83,11 +54,11 @@ function vitalsTable(page, thresholds) {
     .map(([label, value, limit, unit, note]) => {
       const measured = value !== null && value !== undefined;
       const pass = measured && limit !== null ? value <= limit : measured;
-      const limitText = limit !== null ? `≤ ${limit}${unit ? ` ${unit}` : ''}` : 'informational';
+      const limitText = limit !== null ? `<= ${limit}${unit ? ` ${unit}` : ''}` : 'informational';
       return `
       <tr>
         <td><strong>${esc(label)}</strong><br><small class="muted">${esc(note)}</small></td>
-        <td>${measured ? `${esc(value)}${unit ? ` ${unit}` : ''}` : '—'}</td>
+        <td>${measured ? `${esc(value)}${unit ? ` ${unit}` : ''}` : '-'}</td>
         <td>${esc(limitText)}</td>
         <td>${measured ? badge(pass) : '<span class="muted">not measured</span>'}</td>
       </tr>`;
@@ -97,13 +68,12 @@ function vitalsTable(page, thresholds) {
   return `<table><thead><tr><th>Metric</th><th>Value</th><th>Target</th><th>Status</th></tr></thead><tbody>${body}</tbody></table>`;
 }
 
-/** Accessibility violations table for one page */
 function a11yTable(page) {
   if (page.error) {
-    return `<p class="error">⚠ This page could not be audited: ${esc(page.error)}</p>`;
+    return `<p class="error">This page could not be audited: ${esc(page.error)}</p>`;
   }
   if (!page.violations.length) {
-    return `<p class="ok">🎉 No accessibility violations detected. ${page.passes} checks passed.</p>`;
+    return `<p class="ok">No accessibility violations detected. ${page.passes} checks passed.</p>`;
   }
 
   const rows = page.violations
@@ -114,7 +84,7 @@ function a11yTable(page) {
           <strong>${esc(v.title)}</strong><br>
           <code class="rule">${esc(v.id)}</code><br>
           <small class="muted">${esc(v.description)}</small><br>
-          <a href="${esc(v.helpUrl)}" target="_blank" rel="noopener">How to fix ↗</a>
+          <a href="${esc(v.helpUrl)}" target="_blank" rel="noopener">How to fix</a>
         </td>
         <td>${impactChip(v.impact)}</td>
         <td>${v.nodeCount}</td>
@@ -129,7 +99,7 @@ function a11yTable(page) {
               </li>`
               )
               .join('')}
-            ${v.nodeCount > v.nodes.length ? `<li class="muted">…and ${v.nodeCount - v.nodes.length} more</li>` : ''}
+            ${v.nodeCount > v.nodes.length ? `<li class="muted">and ${v.nodeCount - v.nodes.length} more</li>` : ''}
           </ul>
         </td>
       </tr>`
@@ -139,7 +109,6 @@ function a11yTable(page) {
   return `<table class="a11y"><thead><tr><th>Rule</th><th>Impact</th><th>Nodes</th><th>Affected Elements</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
-/** Screenshot gallery (mobile / tablet / desktop) for one page */
 function gallery(page) {
   const entries = Object.entries(page.screenshots || {});
   if (!entries.length) return '<p class="muted">No screenshots captured.</p>';
@@ -149,19 +118,15 @@ function gallery(page) {
         .map(
           ([label, relPath]) => `
         <figure>
-          <figcaption>${esc(label.toUpperCase())} · ${esc(config.viewports[label]?.width ?? '')}px</figcaption>
+          <figcaption>${esc(label.toUpperCase())} ${esc(config.viewports[label]?.width ?? '')}px</figcaption>
           <a href="../${esc(relPath)}" target="_blank" rel="noopener">
-            <img src="../${esc(relPath)}" alt="${esc(page.name)} — ${esc(label)} viewport" loading="lazy">
+            <img src="../${esc(relPath)}" alt="${esc(page.name)} ${esc(label)} viewport" loading="lazy">
           </a>
         </figure>`
         )
         .join('')}
     </div>`;
 }
-
-/* ------------------------------------------------------------------ */
-/*  Full HTML document                                                 */
-/* ------------------------------------------------------------------ */
 
 const REPORT_CSS = `
   :root {
@@ -225,24 +190,23 @@ const REPORT_CSS = `
 `;
 
 function buildHtml(data) {
-  // One section per scanned page
   const sections = data.pages
     .map(
       (page, i) => `
     <section id="page-${i}">
-      <h2>📄 ${esc(page.name)}</h2>
+      <h2>${esc(page.name)}</h2>
       <p>
         <a href="${esc(page.url)}" target="_blank" rel="noopener">${esc(page.url)}</a>
-        · scanned ${esc(new Date(page.scannedAt).toLocaleString())}
+        - scanned ${esc(new Date(page.scannedAt).toLocaleString())}
       </p>
 
-      <h3>⚡ Core Web Vitals</h3>
+      <h3>Core Web Vitals</h3>
       ${vitalsTable(page, data.thresholds)}
 
-      <h3>♿ Accessibility Violations</h3>
+      <h3>Accessibility Violations</h3>
       ${a11yTable(page)}
 
-      <h3>📸 Screenshots</h3>
+      <h3>Screenshots</h3>
       ${gallery(page)}
     </section>`
     )
@@ -253,32 +217,28 @@ function buildHtml(data) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accessibility &amp; Performance Report — ${esc(new Date(data.runAt).toLocaleDateString())}</title>
+<title>Accessibility &amp; Performance Report - ${esc(new Date(data.runAt).toLocaleDateString())}</title>
 <style>${REPORT_CSS}</style>
 </head>
 <body>
 <header>
-  <h1>🔍 Web Accessibility &amp; Performance Report</h1>
-  <p>Generated ${esc(new Date(data.runAt).toLocaleString())} · axe-core + Playwright · Core Web Vitals</p>
+  <h1>Web Accessibility &amp; Performance Report</h1>
+  <p>Generated ${esc(new Date(data.runAt).toLocaleString())} | axe-core + Playwright | Core Web Vitals</p>
 </header>
 <main>
   <div class="cards">${summaryCards(data.summary)}</div>
   ${sections}
 </main>
 <footer>
-  Report by portfolio-monitor — thresholds: LCP ≤ ${esc(data.thresholds.lcp)}ms · CLS ≤ ${esc(data.thresholds.cls)} · FID ≤ ${esc(data.thresholds.fid)}ms
+  Report by portfolio-monitor - thresholds: LCP &lt;= ${esc(data.thresholds.lcp)}ms, CLS &lt;= ${esc(data.thresholds.cls)}, FID &lt;= ${esc(data.thresholds.fid)}ms
 </footer>
 </body>
 </html>`;
 }
 
-/* ------------------------------------------------------------------ */
-/*  CLI entry point                                                    */
-/* ------------------------------------------------------------------ */
-
 function generateReport() {
   if (!fs.existsSync(config.paths.dataFile)) {
-    console.error('❌ results/results.json not found. Run `node src/monitor.js` first.');
+    console.error('results/results.json not found. Run `node src/monitor.js` first.');
     process.exit(1);
   }
 
@@ -286,10 +246,9 @@ function generateReport() {
   fs.mkdirSync(config.paths.reportsDir, { recursive: true });
   fs.writeFileSync(config.paths.reportFile, buildHtml(data));
 
-  console.log(`✅ Report generated: ${config.paths.reportFile}`);
-  console.log('   Open it with VS Code Live Server, or double-click the file.');
+  console.log(`Report generated: ${config.paths.reportFile}`);
+  console.log('Open it with VS Code Live Server, or double-click the file.');
 }
 
-// Usable both as a CLI script and as an importable module
 if (require.main === module) generateReport();
 module.exports = { generateReport, buildHtml };
