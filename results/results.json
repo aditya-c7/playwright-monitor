@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-08-28T10:00:00.319Z",
+  "runAt": "2026-08-29T10:18:54.755Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,29 +10,29 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 6,
-    "criticalOrSerious": 1,
-    "avgLcp": 1273,
-    "avgCls": 0.018,
+    "totalViolations": 4,
+    "criticalOrSerious": 0,
+    "avgLcp": 576,
+    "avgCls": 0.017,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-08-28T09:59:18.995Z",
+      "scannedAt": "2026-08-29T10:18:23.364Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1680,
+        "lcp": 1192,
         "cls": 0,
         "fid": null,
-        "ttfb": 355.60000002384186,
-        "loadTime": 1904.6000000238419,
-        "domContentLoaded": 1686.2000000178814
+        "ttfb": 216.09999999999127,
+        "loadTime": 1007.5,
+        "domContentLoaded": 1001.5
       },
       "violations": [],
       "passes": 36,
@@ -41,19 +41,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-08-28T09:59:29.959Z",
+      "scannedAt": "2026-08-29T10:18:32.325Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 788,
-        "cls": 0.05408793131510417,
+        "lcp": 372,
+        "cls": 0.050625,
         "fid": null,
-        "ttfb": 145.69999998807907,
-        "loadTime": 1302.199999988079,
-        "domContentLoaded": 1292.8999999761581
+        "ttfb": 11.19999999999709,
+        "loadTime": 508.8999999999942,
+        "domContentLoaded": 489.3000000000029
       },
       "violations": [
         {
@@ -82,19 +82,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-08-28T09:59:49.399Z",
+      "scannedAt": "2026-08-29T10:18:46.253Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1352,
+        "lcp": 164,
         "cls": 0,
         "fid": null,
-        "ttfb": 821.7999999821186,
-        "loadTime": 1763.199999988079,
-        "domContentLoaded": 1578.2999999821186
+        "ttfb": 100.30000000000291,
+        "loadTime": 289.1999999999971,
+        "domContentLoaded": 288.90000000000873
       },
       "violations": [
         {
@@ -130,54 +130,8 @@
           "nodes": [
             {
               "target": "html",
-              "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en-IN\">",
+              "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en\">",
               "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "impact": "serious",
-          "title": "Links must be distinguishable without relying on color",
-          "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/link-in-text-block?application=playwright",
-          "tags": [
-            "cat.color",
-            "wcag2a",
-            "wcag141",
-            "TTv5",
-            "TT13.a",
-            "EN-301-549",
-            "EN-9.1.4.1",
-            "RGAAv4",
-            "RGAA-10.6.1"
-          ],
-          "nodeCount": 9,
-          "nodes": [
-            {
-              "target": "#SIvCob > a:nth-child(1)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=hi&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBY\">हिन्दी</a>",
-              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "target": "#SIvCob > a:nth-child(2)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=bn&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBc\">বাংলা</a>",
-              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "target": "#SIvCob > a:nth-child(3)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=te&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBg\">తెలుగు</a>",
-              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "target": "a:nth-child(4)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=mr&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBk\">मराठी</a>",
-              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "target": "a:nth-child(5)",
-              "html": "<a href=\"https://www.google.com/setprefs?sig=0_AnU9asV8xpR8EbLkAG2Y2Ahjv8w%3D&amp;hl=ta&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwj_r5mbiMOWAxWWzTgGHbCjG6EQ2ZgBCBo\">தமிழ்</a>",
-              "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1a0dab, surrounding text: #474747)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             }
           ]
         },
@@ -195,29 +149,8 @@
           "nodes": [
             {
               "target": "html",
-              "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en-IN\">",
+              "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en\">",
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
-            }
-          ]
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "title": "All page content should be contained by landmarks",
-          "description": "Ensure all page content is contained by landmarks",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
-          "tags": [
-            "cat.keyboard",
-            "best-practice",
-            "RGAAv4",
-            "RGAA-9.2.1"
-          ],
-          "nodeCount": 1,
-          "nodes": [
-            {
-              "target": "#SIvCob",
-              "html": "<div id=\"SIvCob\">",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
             }
           ]
         }
