@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-04T08:09:12.389Z",
+  "runAt": "2026-09-05T07:48:04.267Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,7 +12,7 @@
     "failedPages": 0,
     "totalViolations": 4,
     "criticalOrSerious": 0,
-    "avgLcp": 603,
+    "avgLcp": 697,
     "avgCls": 0.03,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-04T08:08:35.926Z",
+      "scannedAt": "2026-09-05T07:47:28.757Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1056,
+        "lcp": 1172,
         "cls": 0,
         "fid": null,
-        "ttfb": 517.1999999999971,
-        "loadTime": 1211.300000000003,
-        "domContentLoaded": 943.5
+        "ttfb": 478.90000000000146,
+        "loadTime": 1155.300000000003,
+        "domContentLoaded": 1064.300000000003
       },
       "violations": [],
       "passes": 38,
@@ -41,19 +41,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-04T08:08:46.683Z",
+      "scannedAt": "2026-09-05T07:47:39.378Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 452,
+        "lcp": 604,
         "cls": 0.09140625,
         "fid": null,
-        "ttfb": 86.80000000000291,
-        "loadTime": 858.3999999999942,
-        "domContentLoaded": 844.0999999999913
+        "ttfb": 124.10000000000582,
+        "loadTime": 953,
+        "domContentLoaded": 947.4000000000015
       },
       "violations": [
         {
@@ -82,19 +82,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-04T08:09:03.150Z",
+      "scannedAt": "2026-09-05T07:47:55.250Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 300,
+        "lcp": 316,
         "cls": 0,
         "fid": null,
-        "ttfb": 199,
-        "loadTime": 604,
-        "domContentLoaded": 476
+        "ttfb": 180.8000000000029,
+        "loadTime": 551,
+        "domContentLoaded": 418.8000000000029
       },
       "violations": [
         {
@@ -111,7 +111,7 @@
           "nodes": [
             {
               "target": "#ti6dpd",
-              "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" title=\"Search\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-has",
+              "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" a",
               "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
             }
           ]
