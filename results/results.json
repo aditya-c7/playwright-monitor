@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-05T07:48:04.267Z",
+  "runAt": "2026-09-06T08:02:49.642Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,9 +10,9 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 4,
-    "criticalOrSerious": 0,
-    "avgLcp": 697,
+    "totalViolations": 5,
+    "criticalOrSerious": 1,
+    "avgLcp": 600,
     "avgCls": 0.03,
     "avgFid": 0
   },
@@ -20,40 +20,90 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-05T07:47:28.757Z",
+      "scannedAt": "2026-09-06T08:02:14.141Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1172,
+        "lcp": 1004,
         "cls": 0,
         "fid": null,
-        "ttfb": 478.90000000000146,
-        "loadTime": 1155.300000000003,
-        "domContentLoaded": 1064.300000000003
+        "ttfb": 596.5,
+        "loadTime": 1007.5999999999985,
+        "domContentLoaded": 886.0999999999985
       },
-      "violations": [],
+      "violations": [
+        {
+          "id": "svg-img-alt",
+          "impact": "serious",
+          "title": "<svg> elements with an img or image role must have alternative text",
+          "description": "Ensure <svg> elements with an img, image, graphics-document or graphics-symbol role have accessible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/svg-img-alt?application=playwright",
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag111",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT7.a",
+            "EN-301-549",
+            "EN-9.1.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-1.1.5"
+          ],
+          "nodeCount": 18,
+          "nodes": [
+            {
+              "target": ".text-sky-400",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-sky-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            },
+            {
+              "target": ".text-yellow-400",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-yellow-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            },
+            {
+              "target": ".bg-\\[\\#18181b\\].px-3\\.5.py-2:nth-child(3) > .text-orange-400[fill=\"currentColor\"][stroke-width=\"0\"]",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-orange-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            },
+            {
+              "target": ".text-blue-400",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-blue-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            },
+            {
+              "target": ".text-violet-400",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-violet-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        }
+      ],
       "passes": 38,
       "error": null
     },
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-05T07:47:39.378Z",
+      "scannedAt": "2026-09-06T08:02:24.700Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 604,
+        "lcp": 516,
         "cls": 0.09140625,
         "fid": null,
-        "ttfb": 124.10000000000582,
-        "loadTime": 953,
-        "domContentLoaded": 947.4000000000015
+        "ttfb": 75.90000000000146,
+        "loadTime": 855.7000000000044,
+        "domContentLoaded": 850.5
       },
       "violations": [
         {
@@ -82,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-05T07:47:55.250Z",
+      "scannedAt": "2026-09-06T08:02:40.536Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 316,
+        "lcp": 280,
         "cls": 0,
         "fid": null,
-        "ttfb": 180.8000000000029,
-        "loadTime": 551,
-        "domContentLoaded": 418.8000000000029
+        "ttfb": 192.60000000000582,
+        "loadTime": 566.4000000000087,
+        "domContentLoaded": 449.6000000000058
       },
       "violations": [
         {
