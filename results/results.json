@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-08T08:15:54.328Z",
+  "runAt": "2026-09-09T08:18:57.682Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,7 +12,7 @@
     "failedPages": 0,
     "totalViolations": 5,
     "criticalOrSerious": 1,
-    "avgLcp": 475,
+    "avgLcp": 499,
     "avgCls": 0.03,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-08T08:15:19.041Z",
+      "scannedAt": "2026-09-09T08:18:22.717Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 708,
+        "lcp": 792,
         "cls": 0,
         "fid": null,
-        "ttfb": 549.8999999999942,
-        "loadTime": 823.5,
-        "domContentLoaded": 621.5999999999985
+        "ttfb": 427,
+        "loadTime": 781.7000000000116,
+        "domContentLoaded": 780.2999999999884
       },
       "violations": [
         {
@@ -55,31 +55,31 @@
             "RGAAv4",
             "RGAA-1.1.5"
           ],
-          "nodeCount": 22,
+          "nodeCount": 21,
           "nodes": [
             {
-              "target": "a[aria-label=\"GitHub\"] > svg[stroke-width=\"0\"][role=\"img\"][height=\"1em\"]",
+              "target": "a[aria-label=\"GitHub\"] > .h-4.w-4[stroke-width=\"0\"]",
               "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
               "target": ".text-sky-400",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-sky-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-sky-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
-              "target": ".text-yellow-400",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-yellow-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "target": ".text-yellow-400.md\\:h-4.md\\:w-4",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-yellow-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
-              "target": ".bg-\\[\\#18181b\\].px-3\\.5.py-2:nth-child(3) > .text-orange-400.shrink-0[stroke-width=\"0\"]",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-orange-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "target": ".bg-\\[\\#38332F\\].hover\\:border-zinc-700.hover\\:bg-\\[\\#44403C\\]:nth-child(3) > .text-orange-400.md\\:h-4.md\\:w-4",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-orange-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
               "target": ".text-blue-400",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-blue-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-blue-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.or",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             }
           ]
@@ -91,7 +91,7 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-08T08:15:29.462Z",
+      "scannedAt": "2026-09-09T08:18:32.987Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
@@ -101,9 +101,9 @@
         "lcp": 500,
         "cls": 0.09140625,
         "fid": null,
-        "ttfb": 11.30000000000291,
-        "loadTime": 728.3000000000029,
-        "domContentLoaded": 718.8000000000029
+        "ttfb": 14.799999999988358,
+        "loadTime": 724.7000000000116,
+        "domContentLoaded": 715
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-08T08:15:45.467Z",
+      "scannedAt": "2026-09-09T08:18:48.847Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 216,
+        "lcp": 204,
         "cls": 0,
         "fid": null,
-        "ttfb": 102.30000000000291,
-        "loadTime": 364.3000000000029,
-        "domContentLoaded": 363.8000000000029
+        "ttfb": 103.09999999997672,
+        "loadTime": 345.0999999999767,
+        "domContentLoaded": 344.5999999999767
       },
       "violations": [
         {
