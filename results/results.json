@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-10T08:18:45.255Z",
+  "runAt": "2026-09-11T08:13:33.594Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,9 +10,9 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 5,
-    "criticalOrSerious": 1,
-    "avgLcp": 639,
+    "totalViolations": 7,
+    "criticalOrSerious": 2,
+    "avgLcp": 600,
     "avgCls": 0.03,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-10T08:18:08.772Z",
+      "scannedAt": "2026-09-11T08:12:58.182Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1180,
+        "lcp": 1012,
         "cls": 0,
         "fid": null,
-        "ttfb": 500.09999999999854,
-        "loadTime": 1171,
-        "domContentLoaded": 925.5999999999985
+        "ttfb": 333.5999999999767,
+        "loadTime": 1029,
+        "domContentLoaded": 879
       },
       "violations": [
         {
@@ -55,7 +55,7 @@
             "RGAAv4",
             "RGAA-1.1.5"
           ],
-          "nodeCount": 22,
+          "nodeCount": 21,
           "nodes": [
             {
               "target": "a[aria-label=\"GitHub\"] > .h-4.w-4[stroke-width=\"0\"]",
@@ -91,19 +91,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-10T08:18:19.744Z",
+      "scannedAt": "2026-09-11T08:13:08.743Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 512,
+        "lcp": 548,
         "cls": 0.09140625,
         "fid": null,
-        "ttfb": 155.3000000000029,
-        "loadTime": 1098.4000000000087,
-        "domContentLoaded": 996.8000000000029
+        "ttfb": 161.40000000002328,
+        "loadTime": 974.6000000000349,
+        "domContentLoaded": 957.9000000000233
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-10T08:18:36.269Z",
+      "scannedAt": "2026-09-11T08:13:24.632Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 224,
+        "lcp": 240,
         "cls": 0,
         "fid": null,
-        "ttfb": 152.1999999999971,
-        "loadTime": 455.3999999999942,
-        "domContentLoaded": 454.8999999999942
+        "ttfb": 153.29999999998836,
+        "loadTime": 497.0999999999767,
+        "domContentLoaded": 364.5
       },
       "violations": [
         {
@@ -163,6 +163,36 @@
               "target": "#ti6dpd",
               "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" a",
               "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "impact": "critical",
+          "title": "Images must have alternative text",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag111",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT7.a",
+            "TT7.b",
+            "EN-301-549",
+            "EN-9.1.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-1.1.1"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "#promo_image19058195",
+              "html": "<img id=\"promo_image19058195\" src=\"data:image/png;base6...\" style=\"height:41px;width:69...\" data-deferred=\"3\" data-aatf=\"1\">",
+              "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
           ]
         },
@@ -203,9 +233,30 @@
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
             }
           ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "title": "All page content should be contained by landmarks",
+          "description": "Ensure all page content is contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+          "tags": [
+            "cat.keyboard",
+            "best-practice",
+            "RGAAv4",
+            "RGAA-9.2.1"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "div[jsslot=\"\"]",
+              "html": "<div jsslot=\"\">",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
         }
       ],
-      "passes": 32,
+      "passes": 33,
       "error": null
     }
   ]
