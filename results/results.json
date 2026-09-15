@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-14T09:10:19.825Z",
+  "runAt": "2026-09-15T08:52:37.561Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,9 +10,9 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 5,
+    "totalViolations": 6,
     "criticalOrSerious": 1,
-    "avgLcp": 659,
+    "avgLcp": 459,
     "avgCls": 0.017,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-14T09:09:43.851Z",
+      "scannedAt": "2026-09-15T08:52:02.083Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1140,
+        "lcp": 660,
         "cls": 0,
         "fid": null,
-        "ttfb": 405.5,
-        "loadTime": 1201.2000000000044,
-        "domContentLoaded": 1015.7000000000044
+        "ttfb": 408.79999999999563,
+        "loadTime": 703.5,
+        "domContentLoaded": 543.0999999999985
       },
       "violations": [
         {
@@ -91,19 +91,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-14T09:09:54.598Z",
+      "scannedAt": "2026-09-15T08:52:12.341Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 572,
+        "lcp": 528,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 55,
-        "loadTime": 794.7999999999956,
-        "domContentLoaded": 791.6999999999971
+        "ttfb": 13.5,
+        "loadTime": 770.8000000000029,
+        "domContentLoaded": 767.4000000000015
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-14T09:10:10.804Z",
+      "scannedAt": "2026-09-15T08:52:28.493Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 264,
+        "lcp": 188,
         "cls": 0,
         "fid": null,
-        "ttfb": 174.1999999999971,
-        "loadTime": 426.8999999999942,
-        "domContentLoaded": 426.3999999999942
+        "ttfb": 106.90000000000873,
+        "loadTime": 371.5,
+        "domContentLoaded": 370.6000000000058
       },
       "violations": [
         {
@@ -203,9 +203,35 @@
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
             }
           ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "title": "All page content should be contained by landmarks",
+          "description": "Ensure all page content is contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+          "tags": [
+            "cat.keyboard",
+            "best-practice",
+            "RGAAv4",
+            "RGAA-9.2.1"
+          ],
+          "nodeCount": 2,
+          "nodes": [
+            {
+              "target": "picture",
+              "html": "<picture><img class=\"ESTs9d\" alt=\"National Voter Registration Day\" height=\"400\" src=\"/logos/doodles/2026/national-voter-registration-day-2026-6753651837111215-l2x.png\" title=\"National Voter Registrati",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": "div[jsslot=\"\"]",
+              "html": "<div jsslot=\"\">",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
         }
       ],
-      "passes": 32,
+      "passes": 33,
       "error": null
     }
   ]
