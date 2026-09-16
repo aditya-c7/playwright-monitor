@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-15T08:52:37.561Z",
+  "runAt": "2026-09-16T08:46:32.228Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,9 +10,9 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 6,
+    "totalViolations": 5,
     "criticalOrSerious": 1,
-    "avgLcp": 459,
+    "avgLcp": 435,
     "avgCls": 0.017,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-15T08:52:02.083Z",
+      "scannedAt": "2026-09-16T08:45:57.059Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 660,
+        "lcp": 484,
         "cls": 0,
         "fid": null,
-        "ttfb": 408.79999999999563,
-        "loadTime": 703.5,
-        "domContentLoaded": 543.0999999999985
+        "ttfb": 217,
+        "loadTime": 545.6000000000058,
+        "domContentLoaded": 392.4000000000233
       },
       "violations": [
         {
@@ -55,7 +55,7 @@
             "RGAAv4",
             "RGAA-1.1.5"
           ],
-          "nodeCount": 21,
+          "nodeCount": 20,
           "nodes": [
             {
               "target": "a[aria-label=\"GitHub\"] > .h-4.w-4[stroke-width=\"0\"]",
@@ -63,23 +63,23 @@
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
-              "target": ".text-sky-400",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-sky-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org",
-              "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
-            },
-            {
-              "target": ".text-yellow-400.md\\:h-4.md\\:w-4",
+              "target": ".text-yellow-400[stroke-width=\"0\"][role=\"img\"]",
               "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-yellow-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
-              "target": ".bg-\\[\\#38332F\\].hover\\:border-zinc-700.hover\\:bg-\\[\\#44403C\\]:nth-child(3) > .text-orange-400.md\\:h-4.md\\:w-4",
+              "target": ".bg-\\[\\#38332F\\].hover\\:border-zinc-700.hover\\:bg-\\[\\#44403C\\]:nth-child(3) > .text-orange-400[stroke-width=\"0\"][role=\"img\"]",
               "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-orange-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
               "target": ".text-blue-400",
               "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-blue-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.or",
+              "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            },
+            {
+              "target": ".text-violet-400",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-violet-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             }
           ]
@@ -91,19 +91,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-15T08:52:12.341Z",
+      "scannedAt": "2026-09-16T08:46:07.102Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 528,
+        "lcp": 576,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 13.5,
-        "loadTime": 770.8000000000029,
-        "domContentLoaded": 767.4000000000015
+        "ttfb": 73,
+        "loadTime": 811,
+        "domContentLoaded": 803.5
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-15T08:52:28.493Z",
+      "scannedAt": "2026-09-16T08:46:23.250Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 188,
+        "lcp": 244,
         "cls": 0,
         "fid": null,
-        "ttfb": 106.90000000000873,
-        "loadTime": 371.5,
-        "domContentLoaded": 370.6000000000058
+        "ttfb": 153.29999999998836,
+        "loadTime": 413.19999999998254,
+        "domContentLoaded": 412.69999999998254
       },
       "violations": [
         {
@@ -203,35 +203,9 @@
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
             }
           ]
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "title": "All page content should be contained by landmarks",
-          "description": "Ensure all page content is contained by landmarks",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
-          "tags": [
-            "cat.keyboard",
-            "best-practice",
-            "RGAAv4",
-            "RGAA-9.2.1"
-          ],
-          "nodeCount": 2,
-          "nodes": [
-            {
-              "target": "picture",
-              "html": "<picture><img class=\"ESTs9d\" alt=\"National Voter Registration Day\" height=\"400\" src=\"/logos/doodles/2026/national-voter-registration-day-2026-6753651837111215-l2x.png\" title=\"National Voter Registrati",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "target": "div[jsslot=\"\"]",
-              "html": "<div jsslot=\"\">",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            }
-          ]
         }
       ],
-      "passes": 33,
+      "passes": 32,
       "error": null
     }
   ]
