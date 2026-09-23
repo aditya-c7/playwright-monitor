@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-22T08:43:53.557Z",
+  "runAt": "2026-09-23T08:45:35.030Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,7 +12,7 @@
     "failedPages": 0,
     "totalViolations": 6,
     "criticalOrSerious": 1,
-    "avgLcp": 932,
+    "avgLcp": 335,
     "avgCls": 0.017,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-22T08:43:19.342Z",
+      "scannedAt": "2026-09-23T08:45:02.932Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1972,
-        "cls": 0.000332186222076416,
+        "lcp": 476,
+        "cls": 0,
         "fid": null,
-        "ttfb": 1527.9000000000015,
-        "loadTime": 2001.2000000000044,
-        "domContentLoaded": 1737.300000000003
+        "ttfb": 234.40000000002328,
+        "loadTime": 540.6999999999534,
+        "domContentLoaded": 370
       },
       "violations": [
         {
@@ -91,19 +91,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-22T08:43:30.271Z",
+      "scannedAt": "2026-09-23T08:45:12.470Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 400,
+        "lcp": 352,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 95.29999999999563,
-        "loadTime": 747.5,
-        "domContentLoaded": 744.5999999999985
+        "ttfb": 14.099999999976717,
+        "loadTime": 618.8000000000466,
+        "domContentLoaded": 615.0999999999767
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-22T08:43:44.627Z",
+      "scannedAt": "2026-09-23T08:45:26.314Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 424,
+        "lcp": 176,
         "cls": 0,
         "fid": null,
-        "ttfb": 201.40000000000873,
-        "loadTime": 638.7000000000116,
-        "domContentLoaded": 400.90000000000873
+        "ttfb": 116.90000000002328,
+        "loadTime": 311.5999999999767,
+        "domContentLoaded": 311.19999999995343
       },
       "violations": [
         {
@@ -219,14 +219,14 @@
           "nodeCount": 1,
           "nodes": [
             {
-              "target": "div[jsslot=\"\"]",
-              "html": "<div jsslot=\"\">",
+              "target": "picture",
+              "html": "<picture><img class=\"ESTs9d\" alt=\"Hispanic Heritage Month 2026\" height=\"200\" src=\"/logos/doodles/2026/celebrating-hhm-2026-6753651837111148.2-law.gif\" title=\"Hispanic Heritage Month 2026\" width=\"500\" ",
               "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
             }
           ]
         }
       ],
-      "passes": 32,
+      "passes": 33,
       "error": null
     }
   ]
