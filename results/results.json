@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-26T08:45:59.782Z",
+  "runAt": "2026-09-27T09:27:12.221Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,9 +10,9 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 5,
+    "totalViolations": 6,
     "criticalOrSerious": 1,
-    "avgLcp": 525,
+    "avgLcp": 576,
     "avgCls": 0.017,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-26T08:45:24.716Z",
+      "scannedAt": "2026-09-27T09:26:36.798Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 916,
+        "lcp": 824,
         "cls": 0,
         "fid": null,
-        "ttfb": 344.5,
-        "loadTime": 935.7999999999956,
-        "domContentLoaded": 850.7999999999956
+        "ttfb": 544.8000000000029,
+        "loadTime": 797.3000000000029,
+        "domContentLoaded": 646.8999999999942
       },
       "violations": [
         {
@@ -91,19 +91,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-26T08:45:35.034Z",
+      "scannedAt": "2026-09-27T09:26:46.994Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 452,
+        "lcp": 532,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 57.200000000004366,
-        "loadTime": 909.7000000000044,
-        "domContentLoaded": 907.5999999999985
+        "ttfb": 85.89999999999418,
+        "loadTime": 879.1999999999971,
+        "domContentLoaded": 876.0999999999913
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-26T08:45:50.925Z",
+      "scannedAt": "2026-09-27T09:27:02.936Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 208,
+        "lcp": 372,
         "cls": 0,
         "fid": null,
-        "ttfb": 121.30000000000291,
-        "loadTime": 365,
-        "domContentLoaded": 364.40000000000873
+        "ttfb": 192.8000000000029,
+        "loadTime": 654.8000000000029,
+        "domContentLoaded": 489.5
       },
       "violations": [
         {
@@ -203,9 +203,35 @@
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
             }
           ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "title": "All page content should be contained by landmarks",
+          "description": "Ensure all page content is contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+          "tags": [
+            "cat.keyboard",
+            "best-practice",
+            "RGAAv4",
+            "RGAA-9.2.1"
+          ],
+          "nodeCount": 2,
+          "nodes": [
+            {
+              "target": "picture",
+              "html": "<picture><img class=\"ESTs9d\" alt=\"Google's 28th Birthday\" height=\"400\" src=\"/logos/doodles/2026/googles-birthday-2026-6753651837111188-2x.png\" title=\"Google's 28th Birthday\" width=\"1000\" id=\"hplogo\" d",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
+            {
+              "target": "div[jsslot=\"\"]",
+              "html": "<div jsslot=\"\">",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            }
+          ]
         }
       ],
-      "passes": 32,
+      "passes": 33,
       "error": null
     }
   ]
