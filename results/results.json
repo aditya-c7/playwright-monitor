@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-09-27T09:27:12.221Z",
+  "runAt": "2026-09-28T10:03:57.944Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,29 +10,29 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 6,
+    "totalViolations": 5,
     "criticalOrSerious": 1,
-    "avgLcp": 576,
-    "avgCls": 0.017,
+    "avgLcp": 512,
+    "avgCls": 0.018,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-09-27T09:26:36.798Z",
+      "scannedAt": "2026-09-28T10:03:22.564Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 824,
-        "cls": 0,
+        "lcp": 812,
+        "cls": 0.004517309745152792,
         "fid": null,
-        "ttfb": 544.8000000000029,
-        "loadTime": 797.3000000000029,
-        "domContentLoaded": 646.8999999999942
+        "ttfb": 386.5,
+        "loadTime": 856.5,
+        "domContentLoaded": 792.1999999999971
       },
       "violations": [
         {
@@ -91,19 +91,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-09-27T09:26:46.994Z",
+      "scannedAt": "2026-09-28T10:03:32.899Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 532,
+        "lcp": 536,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 85.89999999999418,
-        "loadTime": 879.1999999999971,
-        "domContentLoaded": 876.0999999999913
+        "ttfb": 13.599999999998545,
+        "loadTime": 767.5999999999985,
+        "domContentLoaded": 764.5
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-09-27T09:27:02.936Z",
+      "scannedAt": "2026-09-28T10:03:49.045Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 372,
+        "lcp": 188,
         "cls": 0,
         "fid": null,
-        "ttfb": 192.8000000000029,
-        "loadTime": 654.8000000000029,
-        "domContentLoaded": 489.5
+        "ttfb": 99.19999999999709,
+        "loadTime": 361.6999999999971,
+        "domContentLoaded": 361.3000000000029
       },
       "violations": [
         {
@@ -203,35 +203,9 @@
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
             }
           ]
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "title": "All page content should be contained by landmarks",
-          "description": "Ensure all page content is contained by landmarks",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
-          "tags": [
-            "cat.keyboard",
-            "best-practice",
-            "RGAAv4",
-            "RGAA-9.2.1"
-          ],
-          "nodeCount": 2,
-          "nodes": [
-            {
-              "target": "picture",
-              "html": "<picture><img class=\"ESTs9d\" alt=\"Google's 28th Birthday\" height=\"400\" src=\"/logos/doodles/2026/googles-birthday-2026-6753651837111188-2x.png\" title=\"Google's 28th Birthday\" width=\"1000\" id=\"hplogo\" d",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "target": "div[jsslot=\"\"]",
-              "html": "<div jsslot=\"\">",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            }
-          ]
         }
       ],
-      "passes": 33,
+      "passes": 32,
       "error": null
     }
   ]
