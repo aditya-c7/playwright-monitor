@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-02T09:58:45.181Z",
+  "runAt": "2026-10-03T09:21:16.357Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,7 +12,7 @@
     "failedPages": 0,
     "totalViolations": 5,
     "criticalOrSerious": 1,
-    "avgLcp": 609,
+    "avgLcp": 507,
     "avgCls": 0.017,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-02T09:58:09.528Z",
+      "scannedAt": "2026-10-03T09:20:40.978Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1120,
+        "lcp": 784,
         "cls": 0,
         "fid": null,
-        "ttfb": 447.8999999999942,
-        "loadTime": 1107.1000000000058,
-        "domContentLoaded": 1106.8999999999942
+        "ttfb": 367.1000000000349,
+        "loadTime": 843.4000000000233,
+        "domContentLoaded": 735.9000000000233
       },
       "violations": [
         {
@@ -58,28 +58,28 @@
           "nodeCount": 21,
           "nodes": [
             {
-              "target": "a[aria-label=\"GitHub\"] > .h-4.w-4[stroke-width=\"0\"]",
+              "target": "a[aria-label=\"GitHub\"] > svg[stroke-width=\"0\"][role=\"img\"][height=\"1em\"]",
               "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
               "target": ".text-yellow-400[stroke-width=\"0\"][role=\"img\"]",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-yellow-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 md:h-5 md:w-5 text-yellow-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
               "target": ".text-\\[\\#3178C6\\]",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-[#3178C6]\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.o",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 md:h-5 md:w-5 text-[#3178C6]\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
-              "target": ".bg-\\[\\#38332F\\].hover\\:border-zinc-700.hover\\:bg-\\[\\#44403C\\]:nth-child(4) > .text-orange-400[stroke-width=\"0\"][role=\"img\"]",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-orange-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.",
+              "target": ".rounded-lg.shadow-\\[inset_0_1px_1px_0_rgba\\(255\\,255\\,255\\,0\\.14\\)\\,inset_0_-1px_0_0_rgba\\(0\\,0\\,0\\,0\\.4\\)\\,0_1px_2px_rgba\\(0\\,0\\,0\\,0\\.5\\)\\].hover\\:shadow-\\[inset_0_1px_2px_0_rgba\\(255\\,255\\,255\\,0\\.2\\)\\,inset_0_-1px_0_0_rgba\\(0\\,0\\,0\\,0\\.4\\)\\,0_4px_12px_rgba\\(0\\,0\\,0\\,0\\.45\\)\\]:nth-child(4) > .text-orange-400[stroke-width=\"0\"][role=\"img\"]",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 md:h-5 md:w-5 text-orange-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
               "target": ".text-blue-400",
-              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-3.5 w-3.5 shrink-0 md:h-4 md:w-4 text-blue-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.or",
+              "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 md:h-5 md:w-5 text-blue-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/20",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             }
           ]
@@ -91,19 +91,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-02T09:58:20.071Z",
+      "scannedAt": "2026-10-03T09:20:51.414Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 460,
+        "lcp": 504,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 157.80000000001746,
-        "loadTime": 923,
-        "domContentLoaded": 837.6000000000058
+        "ttfb": 23.599999999976717,
+        "loadTime": 746.7999999999884,
+        "domContentLoaded": 743.3999999999651
       },
       "violations": [
         {
@@ -132,19 +132,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-02T09:58:36.189Z",
+      "scannedAt": "2026-10-03T09:21:07.384Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 248,
+        "lcp": 232,
         "cls": 0,
         "fid": null,
-        "ttfb": 163,
-        "loadTime": 504.6000000000058,
-        "domContentLoaded": 380.8999999999942
+        "ttfb": 117.29999999998836,
+        "loadTime": 460.69999999995343,
+        "domContentLoaded": 335.5
       },
       "violations": [
         {
@@ -161,7 +161,7 @@
           "nodes": [
             {
               "target": "#ti6dpd",
-              "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-haspopup=\"false\" a",
+              "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" maxlength=\"2048\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-h",
               "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
             }
           ]
