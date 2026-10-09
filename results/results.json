@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-08T10:50:03.273Z",
+  "runAt": "2026-10-09T10:48:41.452Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,7 +12,7 @@
     "failedPages": 0,
     "totalViolations": 7,
     "criticalOrSerious": 2,
-    "avgLcp": 1837,
+    "avgLcp": 744,
     "avgCls": 0.017,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-08T10:49:22.329Z",
+      "scannedAt": "2026-10-09T10:48:05.113Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 4668,
-        "cls": 0.00033523058891296386,
+        "lcp": 1296,
+        "cls": 0,
         "fid": null,
-        "ttfb": 4360.800000000003,
-        "loadTime": 4644.800000000003,
-        "domContentLoaded": 4577.300000000003
+        "ttfb": 938.7999999999956,
+        "loadTime": 1274.8999999999942,
+        "domContentLoaded": 1190.5999999999985
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-08T10:49:37.801Z",
+      "scannedAt": "2026-10-09T10:48:17.130Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 548,
+        "lcp": 600,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 106.39999999999418,
-        "loadTime": 903.5,
-        "domContentLoaded": 900.3999999999942
+        "ttfb": 106.59999999999854,
+        "loadTime": 834.5,
+        "domContentLoaded": 831.1999999999971
       },
       "violations": [
         {
@@ -160,19 +160,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-08T10:49:54.067Z",
+      "scannedAt": "2026-10-09T10:48:32.383Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 296,
+        "lcp": 336,
         "cls": 0,
         "fid": null,
-        "ttfb": 159.90000000000873,
-        "loadTime": 577.9000000000087,
-        "domContentLoaded": 420
+        "ttfb": 223.89999999999418,
+        "loadTime": 596.5,
+        "domContentLoaded": 476.3000000000029
       },
       "violations": [
         {
@@ -244,16 +244,11 @@
             "RGAAv4",
             "RGAA-9.2.1"
           ],
-          "nodeCount": 2,
+          "nodeCount": 1,
           "nodes": [
             {
               "target": "picture",
-              "html": "<picture><img class=\"ESTs9d\" alt=\"Learn more about World Space Week 2026\" height=\"200\" src=\"/logos/doodles/2026/space-week-2026-day-2-6753651837111376.3-law.gif\" title=\"Learn more about World Space We",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "target": "div[jsslot=\"\"]",
-              "html": "<div jsslot=\"\">",
+              "html": "<picture><img class=\"ESTs9d\" alt=\"Learn more about World Space Week 2026\" height=\"200\" src=\"/logos/doodles/2026/space-week-2026-day-3-6753651837111377.2-law.gif\" title=\"Learn more about World Space We",
               "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
             }
           ]
