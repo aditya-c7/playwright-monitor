@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-12T11:12:33.142Z",
+  "runAt": "2026-10-13T10:53:42.065Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,29 +10,29 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 6,
+    "totalViolations": 7,
     "criticalOrSerious": 2,
-    "avgLcp": 764,
-    "avgCls": 0.02,
+    "avgLcp": 705,
+    "avgCls": 0.017,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-12T11:11:55.191Z",
+      "scannedAt": "2026-10-13T10:53:09.684Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1528,
+        "lcp": 1492,
         "cls": 0,
         "fid": null,
-        "ttfb": 344.70000000000437,
-        "loadTime": 1530.9000000000015,
-        "domContentLoaded": 1393
+        "ttfb": 295.20000000001164,
+        "loadTime": 1585.9000000000087,
+        "domContentLoaded": 1424.4000000000087
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-12T11:12:07.804Z",
+      "scannedAt": "2026-10-13T10:53:20.884Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 524,
-        "cls": 0.05971895090738932,
+        "lcp": 396,
+        "cls": 0.050625,
         "fid": null,
-        "ttfb": 34.80000000000291,
-        "loadTime": 915,
-        "domContentLoaded": 911.6000000000058
+        "ttfb": 153.5,
+        "loadTime": 766.0999999999913,
+        "domContentLoaded": 698
       },
       "violations": [
         {
@@ -160,19 +160,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-12T11:12:24.065Z",
+      "scannedAt": "2026-10-13T10:53:33.489Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 240,
+        "lcp": 228,
         "cls": 0,
         "fid": null,
-        "ttfb": 158.1999999999971,
-        "loadTime": 438.8000000000029,
-        "domContentLoaded": 438.3000000000029
+        "ttfb": 167.3000000000029,
+        "loadTime": 407.5,
+        "domContentLoaded": 315.6000000000058
       },
       "violations": [
         {
@@ -229,6 +229,27 @@
               "target": "html",
               "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en\">",
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "title": "All page content should be contained by landmarks",
+          "description": "Ensure all page content is contained by landmarks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
+          "tags": [
+            "cat.keyboard",
+            "best-practice",
+            "RGAAv4",
+            "RGAA-9.2.1"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "div[jsslot=\"\"]",
+              "html": "<div jsslot=\"\">",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
             }
           ]
         }
