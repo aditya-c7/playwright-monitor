@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-13T10:53:42.065Z",
+  "runAt": "2026-10-14T08:56:39.799Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,29 +10,29 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 7,
-    "criticalOrSerious": 2,
-    "avgLcp": 705,
-    "avgCls": 0.017,
+    "totalViolations": 8,
+    "criticalOrSerious": 3,
+    "avgLcp": 837,
+    "avgCls": 0.021,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-13T10:53:09.684Z",
+      "scannedAt": "2026-10-14T08:56:01.193Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1492,
-        "cls": 0,
+        "lcp": 1640,
+        "cls": 0.0030587303108639183,
         "fid": null,
-        "ttfb": 295.20000000001164,
-        "loadTime": 1585.9000000000087,
-        "domContentLoaded": 1424.4000000000087
+        "ttfb": 324.59999999999854,
+        "loadTime": 1882.7000000000044,
+        "domContentLoaded": 1628.9000000000015
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-13T10:53:20.884Z",
+      "scannedAt": "2026-10-14T08:56:14.150Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 396,
-        "cls": 0.050625,
+        "lcp": 416,
+        "cls": 0.05971895090738932,
         "fid": null,
-        "ttfb": 153.5,
-        "loadTime": 766.0999999999913,
-        "domContentLoaded": 698
+        "ttfb": 11.39999999999418,
+        "loadTime": 925.5,
+        "domContentLoaded": 922.5999999999913
       },
       "violations": [
         {
@@ -160,19 +160,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-13T10:53:33.489Z",
+      "scannedAt": "2026-10-14T08:56:30.735Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 228,
+        "lcp": 456,
         "cls": 0,
         "fid": null,
-        "ttfb": 167.3000000000029,
-        "loadTime": 407.5,
-        "domContentLoaded": 315.6000000000058
+        "ttfb": 158.6999999999971,
+        "loadTime": 426.3999999999942,
+        "domContentLoaded": 425.8999999999942
       },
       "violations": [
         {
@@ -191,6 +191,36 @@
               "target": "#ti6dpd",
               "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" maxlength=\"2048\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-h",
               "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "impact": "critical",
+          "title": "Images must have alternative text",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag111",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT7.a",
+            "TT7.b",
+            "EN-301-549",
+            "EN-9.1.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-1.1.1"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "#promo_image19059023",
+              "html": "<img id=\"promo_image19059023\" src=\"data:image/png;base6...\" style=\"height:32px;width:32...\" data-deferred=\"3\" data-aatf=\"1\">",
+              "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
           ]
         },
@@ -254,7 +284,7 @@
           ]
         }
       ],
-      "passes": 32,
+      "passes": 33,
       "error": null
     }
   ]
