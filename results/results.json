@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-14T08:56:39.799Z",
+  "runAt": "2026-10-15T08:30:26.302Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,29 +10,29 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 8,
-    "criticalOrSerious": 3,
-    "avgLcp": 837,
-    "avgCls": 0.021,
+    "totalViolations": 6,
+    "criticalOrSerious": 2,
+    "avgLcp": 1017,
+    "avgCls": 0.018,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-14T08:56:01.193Z",
+      "scannedAt": "2026-10-15T08:29:47.765Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1640,
-        "cls": 0.0030587303108639183,
+        "lcp": 2048,
+        "cls": 0.003393960899776882,
         "fid": null,
-        "ttfb": 324.59999999999854,
-        "loadTime": 1882.7000000000044,
-        "domContentLoaded": 1628.9000000000015
+        "ttfb": 388.90000000000146,
+        "loadTime": 2195.5,
+        "domContentLoaded": 1801.6000000000058
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-14T08:56:14.150Z",
+      "scannedAt": "2026-10-15T08:30:00.926Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 416,
-        "cls": 0.05971895090738932,
+        "lcp": 748,
+        "cls": 0.050625,
         "fid": null,
-        "ttfb": 11.39999999999418,
-        "loadTime": 925.5,
-        "domContentLoaded": 922.5999999999913
+        "ttfb": 229.29999999999563,
+        "loadTime": 1010.2999999999956,
+        "domContentLoaded": 987.9000000000015
       },
       "violations": [
         {
@@ -160,19 +160,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-14T08:56:30.735Z",
+      "scannedAt": "2026-10-15T08:30:17.264Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 456,
+        "lcp": 256,
         "cls": 0,
         "fid": null,
-        "ttfb": 158.6999999999971,
-        "loadTime": 426.3999999999942,
-        "domContentLoaded": 425.8999999999942
+        "ttfb": 167,
+        "loadTime": 431.09999999999127,
+        "domContentLoaded": 430.5
       },
       "violations": [
         {
@@ -191,36 +191,6 @@
               "target": "#ti6dpd",
               "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" maxlength=\"2048\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-h",
               "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
-            }
-          ]
-        },
-        {
-          "id": "image-alt",
-          "impact": "critical",
-          "title": "Images must have alternative text",
-          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
-          "tags": [
-            "cat.text-alternatives",
-            "wcag2a",
-            "wcag111",
-            "section508",
-            "section508.22.a",
-            "TTv5",
-            "TT7.a",
-            "TT7.b",
-            "EN-301-549",
-            "EN-9.1.1.1",
-            "ACT",
-            "RGAAv4",
-            "RGAA-1.1.1"
-          ],
-          "nodeCount": 1,
-          "nodes": [
-            {
-              "target": "#promo_image19059023",
-              "html": "<img id=\"promo_image19059023\" src=\"data:image/png;base6...\" style=\"height:32px;width:32...\" data-deferred=\"3\" data-aatf=\"1\">",
-              "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
           ]
         },
@@ -261,30 +231,9 @@
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
             }
           ]
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "title": "All page content should be contained by landmarks",
-          "description": "Ensure all page content is contained by landmarks",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
-          "tags": [
-            "cat.keyboard",
-            "best-practice",
-            "RGAAv4",
-            "RGAA-9.2.1"
-          ],
-          "nodeCount": 1,
-          "nodes": [
-            {
-              "target": "div[jsslot=\"\"]",
-              "html": "<div jsslot=\"\">",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            }
-          ]
         }
       ],
-      "passes": 33,
+      "passes": 32,
       "error": null
     }
   ]
