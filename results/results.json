@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-17T07:58:20.547Z",
+  "runAt": "2026-10-18T08:13:34.506Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,7 +12,7 @@
     "failedPages": 0,
     "totalViolations": 7,
     "criticalOrSerious": 2,
-    "avgLcp": 775,
+    "avgLcp": 665,
     "avgCls": 0.017,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-17T07:57:42.597Z",
+      "scannedAt": "2026-10-18T08:12:56.693Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1440,
-        "cls": 0.00033523058891296386,
+        "lcp": 1372,
+        "cls": 0,
         "fid": null,
-        "ttfb": 268.8000000000029,
-        "loadTime": 1598.199999999997,
-        "domContentLoaded": 1282
+        "ttfb": 185.8000000000029,
+        "loadTime": 1314,
+        "domContentLoaded": 1212.8999999999942
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-17T07:57:55.180Z",
+      "scannedAt": "2026-10-18T08:13:09.017Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 620,
+        "lcp": 412,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 75.79999999998836,
-        "loadTime": 870.6999999999971,
-        "domContentLoaded": 867.5
+        "ttfb": 13.19999999999709,
+        "loadTime": 820,
+        "domContentLoaded": 817.1999999999971
       },
       "violations": [
         {
@@ -160,19 +160,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-17T07:58:11.428Z",
+      "scannedAt": "2026-10-18T08:13:25.422Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 264,
+        "lcp": 212,
         "cls": 0,
         "fid": null,
-        "ttfb": 186.3000000000029,
-        "loadTime": 444.5,
-        "domContentLoaded": 443.8999999999942
+        "ttfb": 109.19999999998254,
+        "loadTime": 382.5,
+        "domContentLoaded": 381.69999999998254
       },
       "violations": [
         {
@@ -244,16 +244,11 @@
             "RGAAv4",
             "RGAA-9.2.1"
           ],
-          "nodeCount": 2,
+          "nodeCount": 1,
           "nodes": [
             {
               "target": "picture",
-              "html": "<picture><img class=\"ESTs9d\" alt=\"WNBA Finals 2026\" height=\"400\" src=\"/logos/doodles/2026/wnba-finals-6753651837111374-2x.png\" title=\"WNBA Finals 2026\" width=\"1000\" id=\"hplogo\" data-csiid=\"kyrTaoLFI-S",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "target": "div[jsslot=\"\"]",
-              "html": "<div jsslot=\"\">",
+              "html": "<picture><img class=\"ESTs9d\" alt=\"WNBA Finals 2026\" height=\"400\" src=\"/logos/doodles/2026/wnba-finals-6753651837111374-2x.png\" title=\"WNBA Finals 2026\" width=\"1000\" id=\"hplogo\" data-csiid=\"pX_UapaIH8H",
               "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
             }
           ]
