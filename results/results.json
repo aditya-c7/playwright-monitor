@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-20T08:46:51.852Z",
+  "runAt": "2026-10-21T08:47:30.133Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,27 +12,27 @@
     "failedPages": 0,
     "totalViolations": 6,
     "criticalOrSerious": 2,
-    "avgLcp": 2091,
-    "avgCls": 0.018,
+    "avgLcp": 721,
+    "avgCls": 0.017,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-20T08:46:12.202Z",
+      "scannedAt": "2026-10-21T08:46:50.421Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 5572,
-        "cls": 0.003393960899776882,
+        "lcp": 1368,
+        "cls": 0,
         "fid": null,
-        "ttfb": 4544.699999999997,
-        "loadTime": 9135.199999999997,
-        "domContentLoaded": 5426.0999999999985
+        "ttfb": 266.6999999999971,
+        "loadTime": 1442.800000000003,
+        "domContentLoaded": 1262.6000000000058
       },
       "violations": [
         {
@@ -91,7 +91,7 @@
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
             {
-              "target": ".text-yellow-400",
+              "target": ".text-yellow-400[stroke-width=\"0\"][role=\"img\"]",
               "html": "<svg stroke=\"currentColor\" fill=\"currentColor\" stroke-width=\"0\" role=\"img\" viewBox=\"0 0 24 24\" class=\"h-4 w-4 shrink-0 text-yellow-400\" height=\"1em\" width=\"1em\" xmlns=\"http://www.w3.org/2000/svg\">",
               "failureSummary": "Fix any of the following:\n  Element has no child that is a title\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
             },
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-20T08:46:30.933Z",
+      "scannedAt": "2026-10-21T08:47:03.109Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 416,
+        "lcp": 560,
         "cls": 0.050625,
         "fid": null,
-        "ttfb": 113.59999999999854,
-        "loadTime": 661.3000000000029,
-        "domContentLoaded": 636.9000000000015
+        "ttfb": 20.40000000000873,
+        "loadTime": 900.3000000000029,
+        "domContentLoaded": 897
       },
       "violations": [
         {
@@ -160,19 +160,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-20T08:46:43.324Z",
+      "scannedAt": "2026-10-21T08:47:21.063Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 284,
+        "lcp": 236,
         "cls": 0,
         "fid": null,
-        "ttfb": 159.39999999999418,
-        "loadTime": 424.3000000000029,
-        "domContentLoaded": 339
+        "ttfb": 117.60000000000582,
+        "loadTime": 398,
+        "domContentLoaded": 397.29999999998836
       },
       "violations": [
         {
