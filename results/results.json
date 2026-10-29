@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-28T09:55:39.264Z",
+  "runAt": "2026-10-29T10:18:15.618Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -11,28 +11,28 @@
     "totalPages": 3,
     "failedPages": 0,
     "totalViolations": 6,
-    "criticalOrSerious": 2,
-    "avgLcp": 800,
-    "avgCls": 0.03,
+    "criticalOrSerious": 3,
+    "avgLcp": 981,
+    "avgCls": 0.002,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-28T09:55:03.988Z",
+      "scannedAt": "2026-10-29T10:17:35.798Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1496,
-        "cls": 0,
+        "lcp": 1592,
+        "cls": 0.00033523058891296386,
         "fid": null,
-        "ttfb": 334.70000000000437,
-        "loadTime": 1580.2000000000044,
-        "domContentLoaded": 1329.300000000003
+        "ttfb": 486.40000000000146,
+        "loadTime": 1828.0999999999985,
+        "domContentLoaded": 1552.0999999999985
       },
       "violations": [
         {
@@ -119,60 +119,81 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-28T09:55:15.626Z",
+      "scannedAt": "2026-10-29T10:17:48.826Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 608,
-        "cls": 0.0890625,
+        "lcp": 1116,
+        "cls": 0.006184895833333334,
         "fid": null,
-        "ttfb": 142.8000000000029,
-        "loadTime": 1114.300000000003,
-        "domContentLoaded": 1105.800000000003
+        "ttfb": 67.80000000000291,
+        "loadTime": 1024,
+        "domContentLoaded": 965.0999999999985
       },
       "violations": [
         {
-          "id": "landmark-unique",
-          "impact": "moderate",
-          "title": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
-          "description": "Ensure landmarks are unique",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright",
+          "id": "target-size",
+          "impact": "serious",
+          "title": "All touch targets must be 24px large, or leave sufficient space",
+          "description": "Ensure touch targets have sufficient size and space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright",
           "tags": [
-            "cat.semantics",
-            "best-practice"
+            "cat.sensory-and-visual-cues",
+            "wcag22aa",
+            "wcag258"
           ],
-          "nodeCount": 1,
+          "nodeCount": 5,
           "nodes": [
             {
-              "target": ".lp-IntroHero > .CtaForm > form",
-              "html": "<form accept-charset=\"UTF-8\" aria-label=\"Sign up for GitHub\" action=\"/signup\" method=\"get\">",
-              "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+              "target": ".Primer_Brand__CarouselPagination-module__CarouselPagination__indicator--active___vC6GZ",
+              "html": "<button aria-label=\"Go to testimonial 1\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv Primer_Brand__CarouselPagination-module__CarouselPagination",
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (15px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 9px instead of at least 24px."
+            },
+            {
+              "target": "button[aria-label=\"Go to testimonial 2\"]",
+              "html": "<button aria-label=\"Go to testimonial 2\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
+            },
+            {
+              "target": "button[aria-label=\"Go to testimonial 3\"]",
+              "html": "<button aria-label=\"Go to testimonial 3\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
+            },
+            {
+              "target": "button[aria-label=\"Go to testimonial 4\"]",
+              "html": "<button aria-label=\"Go to testimonial 4\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
+            },
+            {
+              "target": "button[aria-label=\"Go to testimonial 5\"]",
+              "html": "<button aria-label=\"Go to testimonial 5\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
             }
           ]
         }
       ],
-      "passes": 49,
+      "passes": 46,
       "error": null
     },
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-28T09:55:30.409Z",
+      "scannedAt": "2026-10-29T10:18:06.583Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 296,
+        "lcp": 236,
         "cls": 0,
         "fid": null,
-        "ttfb": 207.3000000000029,
-        "loadTime": 556.3000000000029,
-        "domContentLoaded": 438.40000000000146
+        "ttfb": 151.60000000000582,
+        "loadTime": 409.1000000000058,
+        "domContentLoaded": 408.5
       },
       "violations": [
         {
