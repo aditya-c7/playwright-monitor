@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-10-31T09:52:38.738Z",
+  "runAt": "2026-11-01T10:43:15.670Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,27 +12,27 @@
     "failedPages": 0,
     "totalViolations": 7,
     "criticalOrSerious": 3,
-    "avgLcp": 1024,
-    "avgCls": 0.002,
+    "avgLcp": 1287,
+    "avgCls": 0.003,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-10-31T09:52:02.769Z",
+      "scannedAt": "2026-11-01T10:42:38.940Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1300,
-        "cls": 0,
+        "lcp": 1812,
+        "cls": 0.0030587303108639183,
         "fid": null,
-        "ttfb": 339.6999999999971,
-        "loadTime": 1475.7999999999993,
-        "domContentLoaded": 1196.699999999997
+        "ttfb": 562.5,
+        "loadTime": 1852.3999999999942,
+        "domContentLoaded": 1736.699999999997
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-10-31T09:52:14.604Z",
+      "scannedAt": "2026-11-01T10:42:51.015Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1568,
+        "lcp": 1744,
         "cls": 0.006184895833333334,
         "fid": null,
-        "ttfb": 63,
-        "loadTime": 941.4000000000015,
-        "domContentLoaded": 833.7999999999956
+        "ttfb": 104.59999999999127,
+        "loadTime": 1051,
+        "domContentLoaded": 931.6999999999971
       },
       "violations": [
         {
@@ -181,19 +181,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-10-31T09:52:30.031Z",
+      "scannedAt": "2026-11-01T10:43:06.723Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 204,
+        "lcp": 304,
         "cls": 0,
         "fid": null,
-        "ttfb": 140.90000000000146,
-        "loadTime": 351.09999999999854,
-        "domContentLoaded": 350.5
+        "ttfb": 198.3000000000029,
+        "loadTime": 537.4000000000087,
+        "domContentLoaded": 421.90000000000873
       },
       "violations": [
         {
@@ -265,16 +265,11 @@
             "RGAAv4",
             "RGAA-9.2.1"
           ],
-          "nodeCount": 2,
+          "nodeCount": 1,
           "nodes": [
             {
               "target": "picture",
-              "html": "<picture><img class=\"ESTs9d\" alt=\"Halloween 2026\" height=\"200\" src=\"/logos/doodles/2026/halloween-2026-6753651837111019-law.gif\" title=\"Halloween 2026\" width=\"500\" id=\"hplogo\" data-csiid=\"XrrlaornCY-Z",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "target": "div[jsname=\"TikT2b\"]",
-              "html": "<div jsname=\"TikT2b\" jsslot=\"\">",
+              "html": "<picture><img class=\"ESTs9d\" alt=\"Native American Heritage Month 2026\" height=\"400\" src=\"/logos/doodles/2026/celebrating-nahm-2026-6753651837111167-2x.png\" title=\"Native American Heritage Month 2026\" ",
               "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
             }
           ]
