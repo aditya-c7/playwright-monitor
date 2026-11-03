@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-02T11:32:35.954Z",
+  "runAt": "2026-11-03T11:11:52.482Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,27 +12,27 @@
     "failedPages": 0,
     "totalViolations": 7,
     "criticalOrSerious": 3,
-    "avgLcp": 1479,
-    "avgCls": 0.002,
+    "avgLcp": 1048,
+    "avgCls": 0.003,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-11-02T11:31:55.559Z",
+      "scannedAt": "2026-11-03T11:11:18.678Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1492,
-        "cls": 0,
+        "lcp": 1524,
+        "cls": 0.0033649537298414437,
         "fid": null,
-        "ttfb": 335.6999999999971,
-        "loadTime": 1561,
-        "domContentLoaded": 1351.699999999997
+        "ttfb": 552.5,
+        "loadTime": 1561.2999999999884,
+        "domContentLoaded": 1379.2999999999884
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-11-02T11:32:08.108Z",
+      "scannedAt": "2026-11-03T11:11:29.872Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1920,
+        "lcp": 1388,
         "cls": 0.006184895833333334,
         "fid": null,
-        "ttfb": 57.799999999995634,
-        "loadTime": 1111.8999999999942,
-        "domContentLoaded": 1012.2999999999956
+        "ttfb": 204.29999999998836,
+        "loadTime": 854,
+        "domContentLoaded": 818
       },
       "violations": [
         {
@@ -181,19 +181,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-11-02T11:32:26.218Z",
+      "scannedAt": "2026-11-03T11:11:43.778Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1024,
+        "lcp": 232,
         "cls": 0,
         "fid": null,
-        "ttfb": 889.8000000000029,
-        "loadTime": 1185.699999999997,
-        "domContentLoaded": 1183.699999999997
+        "ttfb": 159.30000000004657,
+        "loadTime": 456.6000000000349,
+        "domContentLoaded": 340.80000000004657
       },
       "violations": [
         {
@@ -265,8 +265,13 @@
             "RGAAv4",
             "RGAA-9.2.1"
           ],
-          "nodeCount": 1,
+          "nodeCount": 2,
           "nodes": [
+            {
+              "target": "picture",
+              "html": "<picture><img class=\"ESTs9d\" alt=\"United States Midterm Elections 2026\" height=\"400\" src=\"/logos/doodles/2026/us-midterm-elections-2026-6753651837111168-2x.png\" title=\"United States Midterm Elections ",
+              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+            },
             {
               "target": "div[jsname=\"TikT2b\"]",
               "html": "<div jsname=\"TikT2b\" jsslot=\"\">",
@@ -275,7 +280,7 @@
           ]
         }
       ],
-      "passes": 32,
+      "passes": 33,
       "error": null
     }
   ]
