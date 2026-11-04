@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-03T11:11:52.482Z",
+  "runAt": "2026-11-04T11:22:16.078Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,29 +10,29 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 7,
+    "totalViolations": 6,
     "criticalOrSerious": 3,
-    "avgLcp": 1048,
-    "avgCls": 0.003,
+    "avgLcp": 1092,
+    "avgCls": 0.019,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-11-03T11:11:18.678Z",
+      "scannedAt": "2026-11-04T11:21:39.813Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1524,
-        "cls": 0.0033649537298414437,
+        "lcp": 1380,
+        "cls": 0.05,
         "fid": null,
-        "ttfb": 552.5,
-        "loadTime": 1561.2999999999884,
-        "domContentLoaded": 1379.2999999999884
+        "ttfb": 245,
+        "loadTime": 1412.7999999999884,
+        "domContentLoaded": 1358.4000000000233
       },
       "violations": [
         {
@@ -119,19 +119,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-11-03T11:11:29.872Z",
+      "scannedAt": "2026-11-04T11:21:51.520Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1388,
+        "lcp": 1672,
         "cls": 0.006184895833333334,
         "fid": null,
-        "ttfb": 204.29999999998836,
-        "loadTime": 854,
-        "domContentLoaded": 818
+        "ttfb": 153.70000000001164,
+        "loadTime": 990.3000000000466,
+        "domContentLoaded": 984.9000000000233
       },
       "violations": [
         {
@@ -181,19 +181,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-11-03T11:11:43.778Z",
+      "scannedAt": "2026-11-04T11:22:07.151Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 232,
+        "lcp": 224,
         "cls": 0,
         "fid": null,
-        "ttfb": 159.30000000004657,
-        "loadTime": 456.6000000000349,
-        "domContentLoaded": 340.80000000004657
+        "ttfb": 144.59999999997672,
+        "loadTime": 548.7999999999884,
+        "domContentLoaded": 364.19999999995343
       },
       "violations": [
         {
@@ -252,35 +252,9 @@
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
             }
           ]
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "title": "All page content should be contained by landmarks",
-          "description": "Ensure all page content is contained by landmarks",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
-          "tags": [
-            "cat.keyboard",
-            "best-practice",
-            "RGAAv4",
-            "RGAA-9.2.1"
-          ],
-          "nodeCount": 2,
-          "nodes": [
-            {
-              "target": "picture",
-              "html": "<picture><img class=\"ESTs9d\" alt=\"United States Midterm Elections 2026\" height=\"400\" src=\"/logos/doodles/2026/us-midterm-elections-2026-6753651837111168-2x.png\" title=\"United States Midterm Elections ",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
-            {
-              "target": "div[jsname=\"TikT2b\"]",
-              "html": "<div jsname=\"TikT2b\" jsslot=\"\">",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            }
-          ]
         }
       ],
-      "passes": 33,
+      "passes": 32,
       "error": null
     }
   ]
