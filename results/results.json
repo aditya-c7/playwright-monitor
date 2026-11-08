@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-07T10:33:00.108Z",
+  "runAt": "2026-11-08T10:39:56.133Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -9,10 +9,10 @@
   },
   "summary": {
     "totalPages": 3,
-    "failedPages": 0,
-    "totalViolations": 5,
-    "criticalOrSerious": 2,
-    "avgLcp": 1257,
+    "failedPages": 1,
+    "totalViolations": 4,
+    "criticalOrSerious": 1,
+    "avgLcp": 1032,
     "avgCls": 0.002,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-11-07T10:32:20.723Z",
+      "scannedAt": "2026-11-08T10:39:33.852Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1536,
-        "cls": 0,
+        "lcp": 1756,
+        "cls": 0.0030631611612108017,
         "fid": null,
-        "ttfb": 538.0999999999985,
-        "loadTime": 1588.699999999997,
-        "domContentLoaded": 1421.699999999997
+        "ttfb": 647.8000000000029,
+        "loadTime": 1937.5,
+        "domContentLoaded": 1605.5999999999985
       },
       "violations": [
         {
@@ -81,81 +81,29 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-11-07T10:32:33.187Z",
-      "screenshots": {
-        "mobile": "screenshots/github-com_mobile.png",
-        "tablet": "screenshots/github-com_tablet.png",
-        "desktop": "screenshots/github-com_desktop.png"
-      },
-      "vitals": {
-        "lcp": 1932,
-        "cls": 0.006184895833333334,
-        "fid": null,
-        "ttfb": 71,
-        "loadTime": 988.7000000000044,
-        "domContentLoaded": 981.3000000000029
-      },
-      "violations": [
-        {
-          "id": "target-size",
-          "impact": "serious",
-          "title": "All touch targets must be 24px large, or leave sufficient space",
-          "description": "Ensure touch targets have sufficient size and space",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/target-size?application=playwright",
-          "tags": [
-            "cat.sensory-and-visual-cues",
-            "wcag22aa",
-            "wcag258"
-          ],
-          "nodeCount": 5,
-          "nodes": [
-            {
-              "target": ".Primer_Brand__CarouselPagination-module__CarouselPagination__indicator--active___vC6GZ",
-              "html": "<button aria-label=\"Go to testimonial 1\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv Primer_Brand__CarouselPagination-module__CarouselPagination",
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (15px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 9px instead of at least 24px."
-            },
-            {
-              "target": "button[aria-label=\"Go to testimonial 2\"]",
-              "html": "<button aria-label=\"Go to testimonial 2\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
-            },
-            {
-              "target": "button[aria-label=\"Go to testimonial 3\"]",
-              "html": "<button aria-label=\"Go to testimonial 3\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
-            },
-            {
-              "target": "button[aria-label=\"Go to testimonial 4\"]",
-              "html": "<button aria-label=\"Go to testimonial 4\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
-            },
-            {
-              "target": "button[aria-label=\"Go to testimonial 5\"]",
-              "html": "<button aria-label=\"Go to testimonial 5\" type=\"button\" class=\"Primer_Brand__CarouselPagination-module__CarouselPagination__indicator___cq9Tv\"></button>",
-              "failureSummary": "Fix any of the following:\n  Target has insufficient size (6px by 6px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 0px instead of at least 24px."
-            }
-          ]
-        }
-      ],
-      "passes": 46,
-      "error": null
+      "scannedAt": "2026-11-08T10:39:46.659Z",
+      "screenshots": {},
+      "vitals": null,
+      "violations": [],
+      "passes": 0,
+      "error": "page.goto: net::ERR_HTTP2_SERVER_REFUSED_STREAM at https://github.com/"
     },
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-11-07T10:32:51.020Z",
+      "scannedAt": "2026-11-08T10:39:46.961Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 304,
+        "lcp": 308,
         "cls": 0,
         "fid": null,
-        "ttfb": 208.1999999999971,
-        "loadTime": 473.5,
-        "domContentLoaded": 472.8999999999942
+        "ttfb": 174.3000000000029,
+        "loadTime": 547.5,
+        "domContentLoaded": 425.5
       },
       "violations": [
         {
