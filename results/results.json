@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-09T11:56:44.635Z",
+  "runAt": "2026-11-10T11:30:31.629Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,29 +10,29 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 6,
+    "totalViolations": 5,
     "criticalOrSerious": 2,
-    "avgLcp": 1084,
-    "avgCls": 0.002,
+    "avgLcp": 1355,
+    "avgCls": 0.019,
     "avgFid": 0
   },
   "pages": [
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-11-09T11:56:11.637Z",
+      "scannedAt": "2026-11-10T11:29:52.794Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 1480,
-        "cls": 0,
+        "lcp": 1904,
+        "cls": 0.05,
         "fid": null,
-        "ttfb": 351.6000000000058,
-        "loadTime": 1464.800000000003,
-        "domContentLoaded": 1373
+        "ttfb": 651.6999999999971,
+        "loadTime": 1937.7999999999956,
+        "domContentLoaded": 1828.9000000000015
       },
       "violations": [
         {
@@ -81,19 +81,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-11-09T11:56:22.480Z",
+      "scannedAt": "2026-11-10T11:30:05.217Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1472,
+        "lcp": 1936,
         "cls": 0.006184895833333334,
         "fid": null,
-        "ttfb": 108.20000000001164,
-        "loadTime": 666.8000000000029,
-        "domContentLoaded": 646.1000000000058
+        "ttfb": 203.8000000000029,
+        "loadTime": 979.3000000000029,
+        "domContentLoaded": 971.6999999999971
       },
       "violations": [
         {
@@ -143,19 +143,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-11-09T11:56:35.488Z",
+      "scannedAt": "2026-11-10T11:30:22.819Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 300,
+        "lcp": 224,
         "cls": 0,
         "fid": null,
-        "ttfb": 166.59999999999127,
-        "loadTime": 514.5,
-        "domContentLoaded": 362.6999999999971
+        "ttfb": 142.5,
+        "loadTime": 386.6000000000058,
+        "domContentLoaded": 386.1000000000058
       },
       "violations": [
         {
@@ -212,27 +212,6 @@
               "target": "html",
               "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"en\">",
               "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
-            }
-          ]
-        },
-        {
-          "id": "region",
-          "impact": "moderate",
-          "title": "All page content should be contained by landmarks",
-          "description": "Ensure all page content is contained by landmarks",
-          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/region?application=playwright",
-          "tags": [
-            "cat.keyboard",
-            "best-practice",
-            "RGAAv4",
-            "RGAA-9.2.1"
-          ],
-          "nodeCount": 1,
-          "nodes": [
-            {
-              "target": "div[jsname=\"TikT2b\"]",
-              "html": "<div jsname=\"TikT2b\" jsslot=\"\">",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
             }
           ]
         }
