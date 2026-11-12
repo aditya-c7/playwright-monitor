@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-11T11:19:32.990Z",
+  "runAt": "2026-11-12T11:39:01.148Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -10,9 +10,9 @@
   "summary": {
     "totalPages": 3,
     "failedPages": 0,
-    "totalViolations": 5,
-    "criticalOrSerious": 1,
-    "avgLcp": 651,
+    "totalViolations": 6,
+    "criticalOrSerious": 2,
+    "avgLcp": 751,
     "avgCls": 0.002,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-11-11T11:19:02.831Z",
+      "scannedAt": "2026-11-12T11:38:30.646Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 212,
+        "lcp": 312,
         "cls": 0,
         "fid": null,
-        "ttfb": 182.79999999999563,
-        "loadTime": 207.09999999999854,
-        "domContentLoaded": 207.09999999999854
+        "ttfb": 294,
+        "loadTime": 354.09999999999127,
+        "domContentLoaded": 353.8999999999942
       },
       "violations": [],
       "passes": 12,
@@ -41,19 +41,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-11-11T11:19:10.680Z",
+      "scannedAt": "2026-11-12T11:38:38.652Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1532,
+        "lcp": 1528,
         "cls": 0.006184895833333334,
         "fid": null,
-        "ttfb": 202,
-        "loadTime": 767.3999999999942,
-        "domContentLoaded": 746.6999999999971
+        "ttfb": 96.30000000000291,
+        "loadTime": 755.0999999999913,
+        "domContentLoaded": 730.8000000000029
       },
       "violations": [
         {
@@ -103,19 +103,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-11-11T11:19:24.513Z",
+      "scannedAt": "2026-11-12T11:38:52.404Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 208,
+        "lcp": 412,
         "cls": 0,
         "fid": null,
-        "ttfb": 149.59999999999854,
-        "loadTime": 416.20000000000437,
-        "domContentLoaded": 307.5
+        "ttfb": 209,
+        "loadTime": 533.2999999999884,
+        "domContentLoaded": 391.8999999999942
       },
       "violations": [
         {
@@ -134,6 +134,36 @@
               "target": "#ti6dpd",
               "html": "<textarea jsname=\"yZiJbe\" class=\"gLFyf\" aria-controls=\"Alh6id\" aria-owns=\"Alh6id\" autofocus=\"\" maxlength=\"2048\" aria-label=\"Search\" placeholder=\"\" aria-autocomplete=\"both\" aria-expanded=\"false\" aria-h",
               "failureSummary": "Fix any of the following:\n  ARIA role combobox is not allowed for given element"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "impact": "critical",
+          "title": "Images must have alternative text",
+          "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/image-alt?application=playwright",
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag111",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT7.a",
+            "TT7.b",
+            "EN-301-549",
+            "EN-9.1.1.1",
+            "ACT",
+            "RGAAv4",
+            "RGAA-1.1.1"
+          ],
+          "nodeCount": 1,
+          "nodes": [
+            {
+              "target": "#promo_image19059558",
+              "html": "<img id=\"promo_image19059558\" src=\"data:image/png;base6...\" style=\"height:24px;width:24...\" data-deferred=\"3\" data-aatf=\"1\">",
+              "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
             }
           ]
         },
@@ -187,13 +217,8 @@
             "RGAAv4",
             "RGAA-9.2.1"
           ],
-          "nodeCount": 2,
+          "nodeCount": 1,
           "nodes": [
-            {
-              "target": "picture",
-              "html": "<picture><img class=\"ESTs9d\" alt=\"Veterans Day 2026\" height=\"200\" src=\"/logos/doodles/2026/veterans-day-2026-6753651837111176-law.gif\" title=\"Veterans Day 2026\" width=\"500\" id=\"hplogo\" data-csiid=\"PE_",
-              "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-            },
             {
               "target": "div[jsname=\"TikT2b\"]",
               "html": "<div jsname=\"TikT2b\" jsslot=\"\">",
