@@ -1,5 +1,5 @@
 {
-  "runAt": "2026-11-20T11:59:48.891Z",
+  "runAt": "2026-11-21T11:33:47.307Z",
   "strictMode": false,
   "thresholds": {
     "lcp": 2500,
@@ -12,7 +12,7 @@
     "failedPages": 0,
     "totalViolations": 5,
     "criticalOrSerious": 2,
-    "avgLcp": 864,
+    "avgLcp": 1012,
     "avgCls": 0.002,
     "avgFid": 0
   },
@@ -20,19 +20,19 @@
     {
       "name": "Aditya Home",
       "url": "https://adityahq.me",
-      "scannedAt": "2026-11-20T11:59:11.144Z",
+      "scannedAt": "2026-11-21T11:33:11.473Z",
       "screenshots": {
         "mobile": "screenshots/adityahq-me_mobile.png",
         "tablet": "screenshots/adityahq-me_tablet.png",
         "desktop": "screenshots/adityahq-me_desktop.png"
       },
       "vitals": {
-        "lcp": 684,
+        "lcp": 1032,
         "cls": 0,
         "fid": null,
-        "ttfb": 529.5,
-        "loadTime": 722.5,
-        "domContentLoaded": 595.1999999999971
+        "ttfb": 740.6000000000022,
+        "loadTime": 1438.800000000003,
+        "domContentLoaded": 903.1000000000022
       },
       "violations": [
         {
@@ -81,19 +81,19 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "scannedAt": "2026-11-20T11:59:22.608Z",
+      "scannedAt": "2026-11-21T11:33:23.108Z",
       "screenshots": {
         "mobile": "screenshots/github-com_mobile.png",
         "tablet": "screenshots/github-com_tablet.png",
         "desktop": "screenshots/github-com_desktop.png"
       },
       "vitals": {
-        "lcp": 1684,
+        "lcp": 1720,
         "cls": 0.006184895833333334,
         "fid": null,
-        "ttfb": 13.69999999999709,
-        "loadTime": 749.5,
-        "domContentLoaded": 740.3999999999942
+        "ttfb": 155.29999999999563,
+        "loadTime": 810.1999999999971,
+        "domContentLoaded": 806.6999999999971
       },
       "violations": [
         {
@@ -143,19 +143,19 @@
     {
       "name": "Google",
       "url": "https://google.com",
-      "scannedAt": "2026-11-20T11:59:40.002Z",
+      "scannedAt": "2026-11-21T11:33:38.612Z",
       "screenshots": {
         "mobile": "screenshots/google-com_mobile.png",
         "tablet": "screenshots/google-com_tablet.png",
         "desktop": "screenshots/google-com_desktop.png"
       },
       "vitals": {
-        "lcp": 224,
+        "lcp": 284,
         "cls": 0,
         "fid": null,
-        "ttfb": 109.90000000000873,
-        "loadTime": 363,
-        "domContentLoaded": 362.6000000000058
+        "ttfb": 200.6999999999971,
+        "loadTime": 418.29999999999563,
+        "domContentLoaded": 417.8999999999942
       },
       "violations": [
         {
